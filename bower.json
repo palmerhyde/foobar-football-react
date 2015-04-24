@@ -1,0 +1,23 @@
+{
+  "name": "foobar-football-react-components",
+  "main": [
+    "*.*"
+  ],
+  "version": "0.0.1",
+  "authors": [
+    "liam <liam_j_molloy@hotmail.com>"
+  ],
+  "description": "react components for FooBar Football",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.13.1",
+    "mcfly": "latest"
+  }
+}
