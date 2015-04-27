@@ -7,6 +7,8 @@ module.exports = React.createClass({
     displayName: 'card container',
 
     componentWillMount: function () {
+        // TODO: players need to come from a store.
+        // TODO: we need a get inital state [].
         this.mockPlayers = [
             {
                 "key" : 1,
@@ -24,6 +26,14 @@ module.exports = React.createClass({
                 "clubUrl" : "http://futhead.cursecdn.com/static/img/15/clubs/5.png",
                 "photoUrl" : "http://futhead.cursecdn.com/static/img/15/players/179844.png"
             },
+            {
+                "key" : 3,
+                "name" : "Liam Molloy",
+                "position" : "Attacker",
+                "nationUrl" : "http://futhead.cursecdn.com/static/img/15/nations/46.png",
+                "clubUrl" : "http://futhead.cursecdn.com/static/img/15/clubs/10.png",
+                "photoUrl" : "http://futhead.cursecdn.com/static/img/15/players/179845.png"
+            }
         ];
     },
     render: function () {
@@ -31,10 +41,7 @@ module.exports = React.createClass({
             <div className="cards">
                 {this.mockPlayers.map(function (player) {
                     return (
-                        <Player
-                            key={player.key}
-                            player={player}
-                            />
+                        <Player key={player.key} player={player} />
                     );
                 })}
             </div>
