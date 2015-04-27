@@ -1,0 +1,17 @@
+{
+  "name": "foobar-football-components",
+  "version": "0.0.1",
+  "description": "foobar football components",
+  "dependencies": {
+    "react": "*",
+    "react-tools": "0.13.1",
+    "bower": "1.4.1",
+    "grunt": "*",
+    "grunt-react": "*",
+    "grunt-browserify": "*",
+    "grunt-contrib-watch": "*",
+    "mcfly": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-sass": "*"
+  }
+}
