@@ -4,7 +4,7 @@ module.exports = React.createClass({
     displayName: 'player component',
     render: function () {
         return (
-            <div>
+            <div  className="card">
                 <div>
                     <img alt="club" className="club" src={this.props.player.clubUrl}/>
                     <img alt="nation" className="nation" src={this.props.player.nationUrl}/>
@@ -14,13 +14,13 @@ module.exports = React.createClass({
                 {this.props.player.name}
                 <span className="score total">1 / 10</span>
                 </div>
-                <div class="photo">
+                <div className="photo">
                     <img alt="picture" src={this.props.player.photoUrl}/>
                 </div>
-                <div class="type">
+                <div className="type">
                     Player - {this.props.player.position}
                 </div>
-                <div class="attrs">
+                <div className="attrs">
                 </div>
             </div>
         );

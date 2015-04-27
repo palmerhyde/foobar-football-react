@@ -1,0 +1,197 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cards .card {
+    float: left;
+    margin: 20px;
+    position: relative;
+}
+
+.card {
+    height: 320px;
+    width: 223px;
+    border: 10px solid black;
+    border-radius: 10px;
+    background-color: #777;
+    padding: 5px;
+    position: relative;
+}
+
+.card .club {
+    width: 22px;
+    left: 17px;
+}
+
+.card .nation {
+    width: 30px;
+    right: 17px;
+}
+
+.card .club, .card .nation {
+    position: absolute;
+    z-index: 1000;
+    top: 40px;
+}
+
+.card .title, .card .type,
+.card .photo, .card .attrs {
+    background-color: #999;
+}
+
+.card .title, .card .type {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.card .photo, .card .attrs {
+    margin: 0px 10px;
+}
+
+.card .photo img {
+    width: 115px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card .attack,
+.card .defence,
+.card .title .score,
+.card-pitch .attack,
+.card-pitch .defence,
+.card .suit-container,
+.card .movement {
+    background: radial-gradient( 5px -9px, circle, white 8%, red 26px );
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+    box-shadow: 1px 1px 1px black;
+    color: white;
+    font: bold 15px/13px Helvetica, Verdana, Tahoma;
+    height: 17px;
+    min-width: 14px;
+    padding: 4px 5px 0 5px;
+    text-align: center;
+    bottom: 0px;
+    position: absolute;
+}
+
+.card-pitch .attack,
+.card-pitch .defence {
+    top: 0;
+}
+
+.card .title .score {
+    background-color: blue;
+    right: 7px;
+    top: 7px;
+}
+
+.card .attack,
+.card-pitch .attack {
+    background-color: green;
+    left: 0px;
+}
+
+.card .defence,
+.card-pitch .defence {
+    background-color: red;
+    right: 0px;
+}
+
+.card-pitch .attack {
+    left: auto;
+    right: -5px;
+}
+
+.card-pitch .defence {
+    right: -14px;
+    top: 22px;
+}
+
+.card .suit-container.top {
+    top: 0px;
+}
+
+.card .type {
+    /*margin-top: -4px;*/
+}
+
+.card .movement {
+    background-color: blue;
+    right: 7px;
+    top: 0px;
+}
+
+.card .attrs {
+    border: 1px solid black;
+    padding: 0px 0px;
+    margin-top: -2px;
+    font-size: 11px;
+    background-color: transparent;
+}
+
+.card .battle {
+    border: 0px solid black;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+table.liam {
+    border: 1px solid black;
+    text-align: center;
+    font-size: xx-small;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+}
+
+.selected {
+    background-color: #ffffff;
+}
+
+.plus {
+    background-color: green;
+}
+
+.minus {
+    background-color: red;
+}
+
+.card .attrs.moves {
+    height: 150px;
+}
+
+.card .attrs .header {
+    background-color: #777777;
+    margin-left: -10px;
+    padding: 0 5px;
+    width: 113%;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: -2px;
+}
+
+.card .attrs .header.last {
+    margin-top: 10px;
+}
+
+.card .attrs .key {
+    font-weight: 700;
+    display: inline-block;
+}
+
+.card .attrs .value {
+    float: right;
+}

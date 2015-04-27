@@ -9,6 +9,7 @@ module.exports = React.createClass({
     componentWillMount: function () {
         this.mockPlayers = [
             {
+                "key" : 1,
                 "name" : "John Terry",
                 "position" : "Defender",
                 "nationUrl" : "http://futhead.cursecdn.com/static/img/15/nations/14.png",
@@ -16,6 +17,7 @@ module.exports = React.createClass({
                 "photoUrl" : "http://futhead.cursecdn.com/static/img/15/players/13732.png"
             },
             {
+                "key" : 2,
                 "name" : "Diego Costa",
                 "position" : "Attacker",
                 "nationUrl" : "http://futhead.cursecdn.com/static/img/15/nations/45.png",
@@ -26,10 +28,11 @@ module.exports = React.createClass({
     },
     render: function () {
         return (
-            <div className="player-container">
+            <div className="cards">
                 {this.mockPlayers.map(function (player) {
                     return (
                         <Player
+                            key={player.key}
                             player={player}
                             />
                     );
