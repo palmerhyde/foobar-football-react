@@ -2,6 +2,9 @@ var React = require('react');
 
 module.exports = React.createClass({
     displayName: 'player component',
+    propTypes: {
+        player: React.PropTypes.object.isRequired
+    },
     render: function () {
         return (
             <div  className="card">

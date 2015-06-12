@@ -1,5 +1,5 @@
 var React = require('react');
-var Container = require('./card.js.jsx');
+var Container = require('./pitch.js.jsx');
 
 window.onload = function() {
     React.render(

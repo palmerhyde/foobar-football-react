@@ -1,3 +1,7 @@
+html {
+    height: 100%;
+}
+
 body {
     background-color: #fff;
     color: #333;
@@ -5,6 +9,117 @@ body {
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     margin: 0;
     padding: 0;
+    height: 100%;
+}
+
+div {
+    height: 100%;
+}
+
+@media only screen {
+    .pitch {
+        border: 1px;
+        border-style: solid;
+        border-color: black;
+        padding: 10px;
+        background-image: url("http://localhost:63342/foobar-football-react/assets/images/pitch.jpg");
+        background-size: 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        height: 97%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:479px) {
+    .pitch {
+        border: 1px;
+        border-style: solid;
+        border-color: black;
+        padding: 10px;
+        background-image: url("http://localhost:63342/foobar-football-react/assets/images/pitch.jpg");
+        background-size: 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        height: 97%;
+        text-align: center;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+
+.valign {
+    vertical-align: middle;
+    display: inline-block;
+    height:100%;
+    display: table-cell;
+}
+
+.lightStripe {
+    background-color: green;
+    background: rgba(0, 128, 0, 0.5);
+    height: 100%;
+    display:table;
+}
+
+.darkStripe {
+    background-color: darkgreen;
+    background: rgba(0, 100, 0, 0.5);
+    height: 100%;
+    display:table;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    margin: 2em;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+    background-image: url("http://futhead.cursecdn.com/static/img/15/players/20801.png");
+    background-size: 70px 70px;
+    opacity: 0.3;
+}
+
+@media only screen and (max-width:479px) {
+    .circle {
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+        margin: 1em;
+        border: 1px;
+        border-style: solid;
+        border-color: white;
+        background-image: url("http://futhead.cursecdn.com/static/img/15/players/20801.png");
+        background-size: 32px 32px;
+        opacity: 0.3;
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+}
+
+.blue {
+    background-color: rgba(0, 0, 255, 1);
+    border-color: gold;
+}
+
+.red {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.active {
+    opacity: 1;
+}
+
+.active:hover {
+    -webkit-transform: scale(1.2); /* Safari and Chrome */
 }
 
 .cards .card {

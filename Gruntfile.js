@@ -28,7 +28,8 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'dist/main.css': 'stylesheets/main.css'
+                    'dist/main.css': 'stylesheets/main.css',
+                    'dist/pure-min.css': 'stylesheets/pure-min.css'
                 }
             }
         },
