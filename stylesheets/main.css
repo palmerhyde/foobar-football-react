@@ -72,6 +72,7 @@ div {
     display:table;
 }
 
+/* monitors */
 .circle {
     width: 70px;
     height: 70px;
@@ -83,14 +84,33 @@ div {
     background-image: url("http://futhead.cursecdn.com/static/img/15/players/20801.png");
     background-size: 70px 70px;
     opacity: 0.3;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* iPad / tablets */
+@media only screen and (max-width:800px) {
+    .circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px;
+        border-style: solid;
+        border-color: white;
+        background-image: url("http://futhead.cursecdn.com/static/img/15/players/20801.png");
+        background-size: 50px 50px;
+        opacity: 0.3;
+    }
+}
+
+/* phones */
 @media only screen and (max-width:479px) {
     .circle {
         width: 32px;
         height: 32px;
         border-radius: 16px;
-        margin: 1em;
         border: 1px;
         border-style: solid;
         border-color: white;
