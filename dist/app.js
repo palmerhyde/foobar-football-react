@@ -89,31 +89,59 @@ module.exports = React.createClass({
                     },
                     defenders: [
                         {
-                            name: "Player 2",
-                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/184432.png",
-                            active: false
+                            name: "Paolo Maldini",
+                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/1109.png",
+                            active: true
                         },
                         {
-                            name: "Player 3",
+                            name: "John Terry",
                             imageUrl: "http://futhead.cursecdn.com/static/img/15/players/13732.png",
                             active: true
                         },
                         {
-                            name: "Player 4",
-                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/179944.png",
+                            name: "Bobby Moore",
+                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/190044.png",
                             active: true
                         },
                         {
-                            name: "Player 5",
+                            name: "Branislav Ivanovic",
                             imageUrl: "http://futhead.cursecdn.com/static/img/15/players/178372.png",
-                            active: false
+                            active: true
                         }
                     ],
                     midfielders: [
-
+                        {
+                            name: "Rudd Gullit",
+                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/214100.png",
+                            active: true
+                        },
+                        {
+                            name: "Frank Lampard",
+                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/5471.png",
+                            active: true
+                        },
+                        {
+                            name: "Roy Keane",
+                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/240.png",
+                            active: true
+                        },
+                        {
+                            name: "Edan Hazard",
+                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/183277.png",
+                            active: true
+                        }
                     ],
                     attackers: [
-
+                        {
+                            name: "Diego Costa",
+                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/179844.png",
+                            active: true
+                        },
+                        {
+                            name: "Gian Franco Zola",
+                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/1201.png",
+                            active: true
+                        }
                     ]
                 },
             opponentsTeam: {
@@ -209,16 +237,22 @@ module.exports = React.createClass({
                 ), 
                 React.createElement("div", {className: "pure-u-1-8 lightStripe"}, 
                     React.createElement("div", {className: "valign"}, 
-                        React.createElement("div", {className: "circle rainbow active"}), 
-                        React.createElement("div", {className: "circle red bg active"}), 
-                        React.createElement("div", {className: "circle red bg active"}), 
-                        React.createElement("div", {className: "circle red bg active"})
+                        this.state.matchView.yourTeam.midfielders.map(function (player, index) {
+                            return (
+                                React.createElement(PlayerChip, {player: player, colour1: this.state.matchView.yourTeam.colour1, colour2: this.state.matchView.yourTeam.colour2})
+                            )
+                        }, this)
+                        
                     )
                 ), 
                 React.createElement("div", {className: "pure-u-1-8 darkStripe"}, 
                     React.createElement("div", {className: "valign"}, 
-                        React.createElement("div", {className: "circle red  not-active"}), 
-                        React.createElement("div", {className: "circle red"})
+                        this.state.matchView.yourTeam.attackers.map(function (player, index) {
+                            return (
+                                React.createElement(PlayerChip, {player: player, colour1: this.state.matchView.yourTeam.colour1, colour2: this.state.matchView.yourTeam.colour2})
+                            )
+                        }, this)
+                        
                     )
                 ), 
                 React.createElement("div", {className: "pure-u-1-8 lightStripe"}, 
