@@ -33,3 +33,6 @@ bower_components
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
 *.iml
 .idea/
+
+#CSS
+.sass-cache

@@ -73,10 +73,43 @@ module.exports = React.createClass({
                     }
                 ],
                 midfielders: [
-
+                    {
+                        name: "Xavi Alonso",
+                        imageUrl: "http://futhead.cursecdn.com/static/img/15/players/10535.png",
+                        active: true
+                    },
+                    {
+                        name: "Isco",
+                        imageUrl: "http://futhead.cursecdn.com/static/img/15/players/197781.png",
+                        active: true
+                    },
+                    {
+                        name: "Jesus Navas",
+                        imageUrl: "http://futhead.cursecdn.com/static/img/15/players/146536.png",
+                        active: true
+                    },
+                    {
+                        name: "Juan Mata",
+                        imageUrl: "http://futhead.cursecdn.com/static/img/15/players/178088.png",
+                        active: true
+                    },
+                    {
+                        name: "Koke",
+                        imageUrl: "http://futhead.cursecdn.com/static/img/15/players/193747.png",
+                        active: true
+                    }
                 ],
                 attackers: [
-
+                    {
+                        name: "Soldado",
+                        imageUrl: "http://futhead.cursecdn.com/static/img/15/players/146758.png",
+                        active: true
+                    },
+                    {
+                        name: "Fernando Torres",
+                        imageUrl: "http://futhead.cursecdn.com/static/img/15/players/49369.png",
+                        active: true
+                    }
                 ]
             }
             }
@@ -120,16 +153,24 @@ module.exports = React.createClass({
                 </div>
                 <div className="pure-u-1-8 lightStripe">
                     <div className="valign">
-                        <div className="circle blue  not-active"></div>
-                        <div className="circle blue"></div>
+                        {this.state.matchView.opponentsTeam.attackers.map(function (player, index) {
+                            return (
+                                <PlayerChip player={player} colour1={this.state.matchView.opponentsTeam.colour1}
+                                            colour2={this.state.matchView.opponentsTeam.colour2}/>
+                            )
+                        }, this)
+                        }
                     </div>
                 </div>
                 <div className="pure-u-1-8 darkStripe">
                     <div className="valign">
-                        <div className="circle blue active"></div>
-                        <div className="circle blue"></div>
-                        <div className="circle blue active"></div>
-                        <div className="circle blue active"></div>
+                        {this.state.matchView.opponentsTeam.midfielders.map(function (player, index) {
+                            return (
+                                <PlayerChip player={player} colour1={this.state.matchView.opponentsTeam.colour1}
+                                            colour2={this.state.matchView.opponentsTeam.colour2}/>
+                            )
+                        }, this)
+                        }
                     </div>
                 </div>
                 <div className="pure-u-1-8 lightStripe">
