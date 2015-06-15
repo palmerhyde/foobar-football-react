@@ -3,7 +3,9 @@ var React = require('react');
 module.exports = React.createClass({
     displayName: 'player chip component',
     propTypes: {
-        player: React.PropTypes.object.isRequired
+        player: React.PropTypes.object.isRequired,
+        colour1: React.PropTypes.object.isRequired,
+        colour2: React.PropTypes.object.isRequired
     },
     handleClick: function () {
         if (this.props.player.active) {
@@ -15,8 +17,12 @@ module.exports = React.createClass({
         alert('hovered');
     },
     render: function () {
-        var className = "circle red";
-        var style = {backgroundImage: 'url(' + this.props.player.imageUrl + ')'};
+        var className = "circle";
+        var style = {
+            backgroundImage: 'url(' + this.props.player.imageUrl + ')',
+            backgroundColor: this.props.colour1,
+            borderColor: this.props.colour2
+        };
         var active = this.props.player.active;
 
         if (active) {
