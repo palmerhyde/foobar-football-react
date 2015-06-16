@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "*",
     "react-tools": "0.13.1",
+    "react-router": "*",
     "bower": "1.4.1",
     "grunt": "*",
     "grunt-react": "*",

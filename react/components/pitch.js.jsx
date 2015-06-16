@@ -1,79 +1,75 @@
 var React = require('react');
 var PlayerChip = require('./player-chip.js.jsx');
 
-module.exports = React.createClass({
-    displayName: 'pitch component',
-    propTypes: {
-        matchView: React.PropTypes.object
-    },
-    getInitialState: function() {
-        return { matchView: {
-                yourTeam: {
-                    name: 'Molloy FC',
-                    colour1: 'darkblue',
-                    colour2: 'gold',
-                    goalkeeper: {
-                        name: "Player 1",
-                        imageUrl: "http://futhead.cursecdn.com/static/img/15/players/192119.png",
+function getMatchState() {
+    return {
+        matchView: {
+            yourTeam: {
+                name: 'Molloy FC',
+                colour1: 'darkblue',
+                colour2: 'gold',
+                goalkeeper: {
+                    name: "Player 1",
+                    imageUrl: "http://futhead.cursecdn.com/static/img/15/players/192119.png",
+                    active: true
+                },
+                defenders: [
+                    {
+                        name: "Paolo Maldini",
+                        imageUrl: "http://futhead.cursecdn.com/static/img/15/players/1109.png",
                         active: true
                     },
-                    defenders: [
-                        {
-                            name: "Paolo Maldini",
-                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/1109.png",
-                            active: true
-                        },
-                        {
-                            name: "John Terry",
-                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/13732.png",
-                            active: true
-                        },
-                        {
-                            name: "Bobby Moore",
-                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/190044.png",
-                            active: true
-                        },
-                        {
-                            name: "Branislav Ivanovic",
-                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/178372.png",
-                            active: true
-                        }
-                    ],
-                    midfielders: [
-                        {
-                            name: "Rudd Gullit",
-                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/214100.png",
-                            active: true
-                        },
-                        {
-                            name: "Frank Lampard",
-                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/5471.png",
-                            active: true
-                        },
-                        {
-                            name: "Roy Keane",
-                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/240.png",
-                            active: true
-                        },
-                        {
-                            name: "Edan Hazard",
-                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/183277.png",
-                            active: true
-                        }
-                    ],
-                    attackers: [
-                        {
-                            name: "Diego Costa",
-                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/179844.png",
-                            active: true
-                        },
-                        {
-                            name: "Gian Franco Zola",
-                            imageUrl: "http://futhead.cursecdn.com/static/img/15/players/1201.png",
-                            active: true
-                        }
-                    ]
-                },
+                    {
+                        name: "John Terry",
+                        imageUrl: "http://futhead.cursecdn.com/static/img/15/players/13732.png",
+                        active: true
+                    },
+                    {
+                        name: "Bobby Moore",
+                        imageUrl: "http://futhead.cursecdn.com/static/img/15/players/190044.png",
+                        active: true
+                    },
+                    {
+                        name: "Branislav Ivanovic",
+                        imageUrl: "http://futhead.cursecdn.com/static/img/15/players/178372.png",
+                        active: true
+                    }
+                ],
+                midfielders: [
+                    {
+                        name: "Rudd Gullit",
+                        imageUrl: "http://futhead.cursecdn.com/static/img/15/players/214100.png",
+                        active: true
+                    },
+                    {
+                        name: "Frank Lampard",
+                        imageUrl: "http://futhead.cursecdn.com/static/img/15/players/5471.png",
+                        active: true
+                    },
+                    {
+                        name: "Roy Keane",
+                        imageUrl: "http://futhead.cursecdn.com/static/img/15/players/240.png",
+                        active: true
+                    },
+                    {
+                        name: "Edan Hazard",
+                        imageUrl: "http://futhead.cursecdn.com/static/img/15/players/183277.png",
+                        active: true
+                    }
+                ],
+                attackers: [
+                    {
+                        name: "Diego Costa",
+                        imageUrl: "http://futhead.cursecdn.com/static/img/15/players/179844.png",
+                        active: true
+                    },
+                    {
+                        name: "Gian Franco Zola",
+                        imageUrl: "http://futhead.cursecdn.com/static/img/15/players/1201.png",
+                        active: true
+                    }
+                ]
+            },
             opponentsTeam: {
                 name: 'Sweaty FC',
                 colour1: 'white',
@@ -140,12 +136,20 @@ module.exports = React.createClass({
                     }
                 ]
             }
-            }
-        };
+        }
+    }
+}
+
+module.exports = React.createClass({
+    displayName: 'pitch component',
+    propTypes: {
+        matchView: React.PropTypes.object
+    },
+    getInitialState: function() {
+        return getMatchState();
     },
     componentDidMount: function (){
-        // Get teams
-        this.setState(getInitialState());
+        this.setState(getMatchState());
     },
     render: function () {
         return (
