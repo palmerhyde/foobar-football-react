@@ -1,4 +1,5 @@
 var React = require('react');
+var MatchActions = require('../actions/match_actions');
 
 module.exports = React.createClass({
     displayName: 'player chip component',
@@ -9,8 +10,7 @@ module.exports = React.createClass({
     },
     handleClick: function () {
         if (this.props.player.active) {
-            alert('clicked');
-            // TODO: Set show player card state to true.
+            MatchActions.setPlayer(this.props.player);
         }
     },
     handleHover: function () {
@@ -28,8 +28,11 @@ module.exports = React.createClass({
         if (active) {
             className = className + " active"
         }
+
         return (
-            <div className={className} style={style} onClick={this.handleClick} onHover={this.handleHover}/>
+            <div className={className} style={style} onClick={this.handleClick} onHover={this.handleHover}>
+                <div></div>
+            </div>
         );
     }
 });

@@ -3,16 +3,17 @@
   "version": "0.0.1",
   "description": "foobar football components",
   "dependencies": {
-    "react": "*",
-    "react-tools": "0.13.1",
-    "react-router": "*",
     "bower": "1.4.1",
+    "firebase": "^2.2.7",
     "grunt": "*",
-    "grunt-react": "*",
     "grunt-browserify": "*",
-    "grunt-contrib-watch": "*",
-    "mcfly": "*",
+    "grunt-contrib-sass": "*",
     "grunt-contrib-uglify": "*",
-    "grunt-contrib-sass": "*"
+    "grunt-contrib-watch": "*",
+    "grunt-react": "*",
+    "mcfly": "*",
+    "react": "*",
+    "react-router": "*",
+    "react-tools": "0.13.1"
   }
 }
