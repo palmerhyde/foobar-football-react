@@ -1,0 +1,163 @@
+{
+  "yourTeam" : {
+    "name": "Molloy FC",
+    "colour1": "purple",
+    "colour2": "gold",
+    "score" : 2,
+    "goalkeeper": {
+      "name": "Thibaut Courtois",
+      "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/192119.png",
+      "active": true,
+      "wikipediaUrl" : "https://en.wikipedia.org/wiki/Thibaut_Courtois"
+    },
+    "defenders": [
+      {
+        "name": "Paolo Maldini",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/1109.png",
+        "active": true
+      },
+      {
+        "name": "John Terry",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/13732.png",
+        "active": true
+      },
+      {
+        "name": "Bobby Moore",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/190044.png",
+        "active": true
+      },
+      {
+        "name": "Branislav Ivanovic",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/178372.png",
+        "active": true
+      }
+    ],
+    "midfielders": [
+      {
+        "name": "Rudd Gullit",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/214100.png",
+        "active": true,
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Ruud_Gullit"
+      },
+      {
+        "name": "Frank Lampard",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/5471.png",
+        "active": true
+      },
+      {
+        "name": "Roy Keane",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/240.png",
+        "active": true,
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Roy_Keane"
+      },
+      {
+        "name": "Edan Hazard",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/183277.png",
+        "active": true
+      }
+    ],
+    "attackers": [
+      {
+        "name": "Diego Costa",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/179844.png",
+        "active": true,
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Diego_Costa"
+      },
+      {
+        "name": "Gian Franco Zola",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/1201.png",
+        "nationImageUrl" : "http://futhead.cursecdn.com/static/img/15/nations/27.png",
+        "clubImageUrl" : "http://futhead.cursecdn.com/static/img/15/clubs/999.png",
+        "active": true,
+        "wikipediaUrl" : "https://en.wikipedia.org/wiki/Gianfranco_Zola",
+        "crossing": 82,
+        "dribbling": 90,
+        "finishing": 85,
+        "gkdiving": 15,
+        "gkhandling": 14,
+        "gkpositioning": 7,
+        "gkreflexes": 8,
+        "heading": 58,
+        "interceptions": 22,
+        "longpassing": 83,
+        "longshots": 81,
+        "marking": 31,
+        "positioning": 87,
+        "shortpassing": 87,
+        "slidingtackle": 20,
+        "shotpower": 75,
+        "standingtackle": 35,
+        "strength": 57,
+        "vision": 79,
+        "volleys": 78
+      }
+    ]
+  },
+  "opponentsTeam": {
+    "name": "Sweaty FC",
+    "colour1": "white",
+    "colour2": "gold",
+    "score" : "0",
+    "goalkeeper": {
+      "name": "David De Gea",
+      "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/193080.png",
+      "active": true
+    },
+    "defenders": [
+      {
+        "name": "Javi Martinez",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/177610.png",
+        "active": true
+      },
+      {
+        "name": "Raul Albiol",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/157481.png",
+        "active": true
+      },
+      {
+        "name": "Pique",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/152729.png",
+        "active": true
+      }
+    ],
+    "midfielders": [
+      {
+        "name": "Xavi Alonso",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/10535.png",
+        "active": true
+      },
+      {
+        "name": "Isco",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/197781.png",
+        "active": true
+      },
+      {
+        "name": "Jesus Navas",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/146536.png",
+        "active": true
+      },
+      {
+        "name": "Juan Mata",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/178088.png",
+        "active": true
+      },
+      {
+        "name": "Koke",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/193747.png",
+        "active": true
+      }
+    ],
+    "attackers": [
+      {
+        "name": "Soldado",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/146758.png",
+        "active": true
+      },
+      {
+        "name": "Fernando Torres",
+        "imageUrl": "http://futhead.cursecdn.com/static/img/15/players/49369.png",
+        "active": true
+      }
+    ]
+  }
+}

@@ -75,8 +75,8 @@ module.exports = React.createClass({
             <div>
                 <div className="pure-g" style={style}>
                         <div className="pure-u-11-24" style={home}>{this.state.matchView.yourTeam.name}</div>
-                        <div className="pure-u-1-24" style={score}>0</div>
-                        <div className="pure-u-1-24" style={score}>0</div>
+                        <div className="pure-u-1-24" style={score}>{this.state.matchView.yourTeam.score}</div>
+                        <div className="pure-u-1-24" style={score}>{this.state.matchView.opponentsTeam.score}</div>
                         <div className="pure-u-11-24" style={away}>{this.state.matchView.opponentsTeam.name}</div>
                 </div>
                 <div className="pure-g" style={style2}>

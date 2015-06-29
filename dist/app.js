@@ -86,10 +86,10 @@ module.exports = React.createClass({
                     React.createElement("div", {className: "pure-u-1-3"}, 
                         React.createElement("div", {className: "circlecardsmall", style: style}), 
                         React.createElement("div", {className: "cardleft"}, 
-                            React.createElement("img", {alt: "club", src: "http://futhead.cursecdn.com/static/img/15/clubs/243.png"})
+                            React.createElement("img", {alt: "club", className: "club", src: this.props.player.clubImageUrl})
                         ), 
                         React.createElement("div", {className: "cardleft"}, 
-                            React.createElement("img", {alt: "nation", src: "http://futhead.cursecdn.com/static/img/15/nations/52.png"})
+                            React.createElement("img", {alt: "nation", className: "nation", src: this.props.player.nationImageUrl})
                         ), 
                          this.props.player.wikipediaUrl ?
                             React.createElement("div", {className: "cardleft"}, 
@@ -105,67 +105,67 @@ module.exports = React.createClass({
                     React.createElement("div", null, 
                         React.createElement("div", {className: "pure-g"}, 
                             React.createElement("div", {className: "pure-u-4-5", style: attributesLeft}, "Crossing"), 
-                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, "90")
+                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, this.props.player.crossing)
                         ), 
                         React.createElement("div", {className: "pure-g"}, 
                             React.createElement("div", {className: "pure-u-4-5", style: attributesLeft}, "Dribbling"), 
-                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, "90")
+                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, this.props.player.dribbling)
                         ), 
                         React.createElement("div", {className: "pure-g"}, 
                             React.createElement("div", {className: "pure-u-4-5", style: attributesLeft}, "Finishing"), 
-                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, "90")
+                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, this.props.player.finishing)
                         ), 
                         React.createElement("div", {className: "pure-g"}, 
                             React.createElement("div", {className: "pure-u-4-5", style: attributesLeft}, "Heading"), 
-                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, "90")
+                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, this.props.player.heading)
                         ), 
                         React.createElement("div", {className: "pure-g"}, 
                             React.createElement("div", {className: "pure-u-4-5", style: attributesLeft}, "Interceptions"), 
-                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, "90")
+                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, this.props.player.interceptions)
                         ), 
                         React.createElement("div", {className: "pure-g"}, 
                             React.createElement("div", {className: "pure-u-4-5", style: attributesLeft}, "Long Passing"), 
-                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, "90")
+                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, this.props.player.longpassing)
                         ), 
                         React.createElement("div", {className: "pure-g"}, 
                             React.createElement("div", {className: "pure-u-4-5", style: attributesLeft}, "Long Shot"), 
-                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, "90")
+                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, this.props.player.longshots)
                         ), 
                         React.createElement("div", {className: "pure-g"}, 
                             React.createElement("div", {className: "pure-u-4-5", style: attributesLeft}, "Marking"), 
-                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, "90")
+                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, this.props.player.marking)
                         ), 
                         React.createElement("div", {className: "pure-g"}, 
                             React.createElement("div", {className: "pure-u-4-5", style: attributesLeft}, "Positioning"), 
-                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, "90")
+                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, this.props.player.positioning)
                         ), 
                         React.createElement("div", {className: "pure-g"}, 
                             React.createElement("div", {className: "pure-u-4-5", style: attributesLeft}, "Power Shot"), 
-                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, "90")
+                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, this.props.player.shotpower)
                         ), 
                         React.createElement("div", {className: "pure-g"}, 
                             React.createElement("div", {className: "pure-u-4-5", style: attributesLeft}, "Short Passing"), 
-                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, "90")
+                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, this.props.player.shortpassing)
                         ), 
                         React.createElement("div", {className: "pure-g"}, 
-                            React.createElement("div", {className: "pure-u-4-5", style: attributesLeft}, "Slide tackle"), 
-                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, "90")
+                            React.createElement("div", {className: "pure-u-4-5", style: attributesLeft}, "Sliding tackle"), 
+                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, this.props.player.slidingtackle)
                         ), 
                         React.createElement("div", {className: "pure-g"}, 
                             React.createElement("div", {className: "pure-u-4-5", style: attributesLeft}, "Standing Tackle"), 
-                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, "90")
+                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, this.props.player.standingtackle)
                         ), 
                         React.createElement("div", {className: "pure-g"}, 
                             React.createElement("div", {className: "pure-u-4-5", style: attributesLeft}, "Stength"), 
-                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, "90")
+                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, this.props.player.strength)
                         ), 
                         React.createElement("div", {className: "pure-g"}, 
                             React.createElement("div", {className: "pure-u-4-5", style: attributesLeft}, "Vision"), 
-                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, "90")
+                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, this.props.player.vision)
                         ), 
                         React.createElement("div", {className: "pure-g"}, 
                             React.createElement("div", {className: "pure-u-4-5", style: attributesLeft}, "Volleying"), 
-                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, "90")
+                            React.createElement("div", {className: "pure-u-1-5", style: attributesRight}, this.props.player.volleys)
                         )
                     )
                     )
@@ -309,8 +309,8 @@ module.exports = React.createClass({
             React.createElement("div", null, 
                 React.createElement("div", {className: "pure-g", style: style}, 
                         React.createElement("div", {className: "pure-u-11-24", style: home}, this.state.matchView.yourTeam.name), 
-                        React.createElement("div", {className: "pure-u-1-24", style: score}, "0"), 
-                        React.createElement("div", {className: "pure-u-1-24", style: score}, "0"), 
+                        React.createElement("div", {className: "pure-u-1-24", style: score}, this.state.matchView.yourTeam.score), 
+                        React.createElement("div", {className: "pure-u-1-24", style: score}, this.state.matchView.opponentsTeam.score), 
                         React.createElement("div", {className: "pure-u-11-24", style: away}, this.state.matchView.opponentsTeam.name)
                 ), 
                 React.createElement("div", {className: "pure-g", style: style2}, 
