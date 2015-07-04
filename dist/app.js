@@ -63,17 +63,19 @@ module.exports = React.createClass({
         var attributesLeft = {
             textAlign : 'right',
             boxSizing : 'border-box',
-            padding : '2px',
-            fontSize : "12px",
-            fontWeight : "bold"
+            padding : '4px',
+            fontSize : "10px",
+            fontWeight : "bold",
+            fontFamily: "PremierLeague"
         };
 
         var attributesRight = {
             textAlign : 'center',
             boxSizing : 'border-box',
-            padding : '2px',
-            fontSize : '12px',
+            padding : '4px',
+            fontSize : '10px',
             fontWeight : "bold",
+            fontFamily: "PremierLeague",
             backgroundColor : "#777"
         };
 
