@@ -19,7 +19,9 @@ module.exports = React.createClass({
             padding : '4px',
             fontSize : "10px",
             fontWeight : "bold",
-            fontFamily: "PremierLeague"
+            fontFamily: "PremierLeague",
+            color: "black"
+
         };
 
         var attributesRight = {
@@ -29,7 +31,8 @@ module.exports = React.createClass({
             fontSize : '10px',
             fontWeight : "bold",
             fontFamily: "PremierLeague",
-            backgroundColor : "#777"
+            backgroundColor : "#777",
+            color : "white"
         };
 
         return (
