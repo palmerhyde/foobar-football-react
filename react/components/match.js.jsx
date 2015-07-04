@@ -3,6 +3,7 @@ var Router = require('react-router');
 var Pitch = require('./pitch.js.jsx');
 var Player = require('./player.js.jsx');
 var Player2 = require('./blank-player.js.jsx');
+var Goalkeeper = require('./goalkeeper.js.jsx');
 var MoveCard = require('./move-card.js.jsx');
 var MatchStore = require('./../stores/match-store');
 var Link = Router.Link;
@@ -14,7 +15,7 @@ function getMatchState() {
         selectedPlayer: MatchStore.SelectedPlayer(),
         move : {
             "name" : "Short pass from defence",
-            "imageUrl" : "http://localhost:63342/foobar-football-react/assets/images/pitch-chalk.jpg"
+            "imageUrl" : "http://localhost:63343/foobar-football-react/assets/images/pitch-chalk.jpg"
         }
     };
 }
@@ -84,7 +85,13 @@ module.exports = React.createClass({
                         <Pitch matchView={this.state.matchView}/>
                     </div>
                     <div className="pure-u-1-4">
-                        <Player2 player={this.state.selectedPlayer} />
+                        {
+                            this.state.selectedPlayer && this.state.selectedPlayer.position == "GK" ?
+                                <Goalkeeper player={this.state.selectedPlayer} />
+                            :
+                                <Player2 player={this.state.selectedPlayer} />
+
+                        }
                         <div>spacer hack</div>
                         <MoveCard move={this.state.move} />
                     </div>

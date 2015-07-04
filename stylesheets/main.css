@@ -18,7 +18,7 @@ body {
         border-style: solid;
         border-color: black;
         padding: 10px;
-        background-image: url("http://localhost:63342/foobar-football-react/assets/images/pitch.jpg");
+        background-image: url("http://localhost:63343/foobar-football-react/assets/images/pitch.jpg");
         background-size: 100%;
         background-position: 50% 50%;
         background-repeat: no-repeat;
@@ -33,7 +33,7 @@ body {
         border-style: solid;
         border-color: black;
         padding: 10px;
-        background-image: url("http://localhost:63342/foobar-football-react/assets/images/pitch.jpg");
+        background-image: url("http://localhost:63343/foobar-football-react/assets/images/pitch.jpg");
         background-size: 100%;
         background-position: 50% 50%;
         background-repeat: no-repeat;

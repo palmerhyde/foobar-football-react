@@ -7,12 +7,14 @@ var RouteHandler = Router.RouteHandler;
 var App = require('./components/app.js.jsx');
 var HomePage = require('./components/homepage.js.jsx');
 var Match = require('./components/match.js.jsx');
+var Players = require('./components/players.js.jsx');
 var NotFound = require('./components/not-found.js.jsx');
 var RouteActions = require('./actions/route-actions');
 
 var routes = (
     <Route name="App" path= "/" handler={App}>
         <Route name="Match" path="/matches/:match_id" handler={Match} />
+        <Route name="Players" path="/players" handler={Players} />
         <DefaultRoute handler={HomePage} />
         <NotFoundRoute handler={NotFound}/>
     </Route>

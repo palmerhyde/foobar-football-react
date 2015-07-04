@@ -53,7 +53,7 @@ module.exports = React.createClass({
                             <div className="cardleft">
                                 <a href={this.props.player.wikipediaUrl} target="_blank">
                                     <img alt="wikipedia" className="wikipedia"
-                                         src="http://localhost:63342/foobar-football-react/assets/images/wikipedia.png"/>
+                                         src="http://localhost:63343/foobar-football-react/assets/images/wikipedia.png"/>
                                 </a>
                             </div> :
                             null
