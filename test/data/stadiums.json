@@ -1,0 +1,200 @@
+[
+  {
+  "name" : "Stamford Bridge",
+  "imageUrl" : "http://chelsea-fans.weebly.com/uploads/1/4/4/7/14474740/1358719_orig.jpg",
+  "synergyUrl" : "https://fifa15.content.easports.com/fifa/fltOnlineAssets/8D941B48-51BB-4B87-960A-06A61A62EBC0/2015/fut/items/images/clubbadges/html5/normal/44x44/l5.png",
+  "type" : "Stadium - Current",
+  "description" : "Give all Chelsea players on the pitch a +10 bonus",
+  "wikipediaUrl" : "https://en.wikipedia.org/wiki/Stamford_Bridge_(stadium)",
+  "googleMapsUrl" : "https://goo.gl/maps/W2U6a"
+  },
+  {
+  "name": "Highbury",
+  "imageUrl": "http://www.arsenal.com/assets/_files/scaled/498x244/jul_08/gun__1216028546_highbury12.jpg?ic=2ec699T",
+  "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/clubs/1.png",
+  "type" : "Stadium - Classic",
+  "description" : "Give all Arsenal players on the pitch a +5 bonus",
+  "wikipediaUrl" : "https://en.wikipedia.org/wiki/Arsenal_Stadium",
+  "googleMapsUrl" : "https://goo.gl/maps/B5OV7"
+  },
+  {
+  "name": "Emirates",
+  "imageUrl": "http://www.arsenal.com/assets/_files/scaled/696x392/sep_13/gun__1379947717_emirates_stadium_photo.jpg",
+  "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/clubs/1.png",
+  "type" : "Stadium - Current",
+  "description" : "Give all Arsenal players on the pitch a +10 bonus",
+  "wikipediaUrl" : "https://en.wikipedia.org/wiki/Emirates_Stadium",
+  "googleMapsUrl" : "https://goo.gl/maps/T8h4R"
+  },
+  {
+  "name": "San Siro",
+  "imageUrl": "http://sportsworldghana.com/wp-content/uploads/2015/07/original.jpg",
+  "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/clubs/47.png",
+  "type" : "Stadium - Current",
+  "description" : "Give all AC Milan players on the pitch a +10 bonus",
+  "wikipediaUrl" : "https://en.wikipedia.org/wiki/San_Siro",
+  "googleMapsUrl" : "https://goo.gl/maps/GQV1m"
+  },
+  {
+  "name": "Stadio Olimpico",
+  "imageUrl": "http://img.fifa.com/mm/photo/worldfootball/clubfootball/02/05/71/55/2057155_full-lnd.jpg",
+  "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/nations/27.png",
+  "type" : "Stadium - Current",
+  "description" : "Give all Italian players on the pitch a +10 bonus",
+  "wikipediaUrl" : "https://en.wikipedia.org/wiki/Stadio_Olimpico",
+  "googleMapsUrl" : "https://goo.gl/maps/hVhi4"
+  },
+  {
+    "name": "White Hart Lane",
+    "imageUrl": "http://now-here-this.timeout.com/wp-content/uploads/2014/09/tot4.jpg",
+    "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/clubs/18.png",
+    "type" : "Stadium - Current",
+    "description" : "Give all Tottenham Hotspur players on the pitch a +10 bonus",
+    "wikipediaUrl" : "https://en.wikipedia.org/wiki/White_Hart_Lane",
+    "googleMapsUrl" : "https://goo.gl/maps/uwClr"
+  },
+  {
+    "name": "Vicente Calderón",
+    "imageUrl": "http://whattodoinmadrid.com/blog/wp-content/uploads/2014/03/Atletico-de-Madrid-schedule-March-2014.jpg",
+    "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/clubs/240.png",
+    "type" : "Stadium - Current",
+    "description" : "Give all Athletico Madrid players on the pitch a +10 bonus",
+    "wikipediaUrl" : "https://en.wikipedia.org/wiki/Vicente_Calder%C3%B3n_Stadium",
+    "googleMapsUrl" : "https://goo.gl/maps/5KjWa"
+  },
+  {
+    "name": "Aviva Stadium",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/7o7Pw.jpg",
+    "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/nations/25.png",
+    "type" : "Stadium - Current",
+    "description" : "Give all Irish players on the pitch a +10 bonus",
+    "wikipediaUrl" : "https://en.wikipedia.org/wiki/Aviva_Stadium",
+    "googleMapsUrl" : "https://goo.gl/maps/TvqEF"
+  },
+  {
+    "name": "Landsdowne Road",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/c/c3/Old_Lansdowne_Road.jpg",
+    "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/nations/25.png",
+    "type" : "Stadium - Classic",
+    "description" : "Give all Irish players on the pitch a +5 bonus",
+    "wikipediaUrl" : "https://en.wikipedia.org/wiki/Aviva_Stadium",
+    "googleMapsUrl" : "https://en.wikipedia.org/wiki/Lansdowne_Road"
+  },
+  {
+    "name": "Old Trafford",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Old_Trafford_inside_20060726_1.jpg",
+    "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/clubs/11.png",
+    "type" : "Stadium - Current",
+    "description" : "Give all Manchester United players on the pitch a +10 bonus",
+    "wikipediaUrl" : "https://en.wikipedia.org/wiki/Old_Trafford",
+    "googleMapsUrl" : "https://goo.gl/maps/Pl17y"
+  },
+  {
+    "name": "Etihad Stadium",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Manchester_City_pitch_invasion.JPG/1920px-Manchester_City_pitch_invasion.JPG",
+    "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/clubs/10.png",
+    "type" : "Stadium - Current",
+    "description" : "Give all Manchester City players on the pitch a +10 bonus",
+    "wikipediaUrl" : "https://en.wikipedia.org/wiki/City_of_Manchester_Stadium",
+    "googleMapsUrl" : "https://goo.gl/maps/6Dfuk"
+  },
+  {
+    "description": "Give all Manchester City players on the pitch a +5 bonus",
+    "googleMapsUrl": "https://goo.gl/maps/ZJTNO",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/3/37/Maine_road_aerial_image.jpg",
+    "name": "Maine Road",
+    "synergyUrl": "http://futhead.cursecdn.com/static/img/15/clubs/10.png",
+    "type": "Stadium - Classic",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Maine_Road"
+  },
+  {
+    "name": "Santiago Bernabéu Stadium",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/The_Santiago_Bernabeu_Stadium_-_U-g-g-B-o-y.jpg/1920px-The_Santiago_Bernabeu_Stadium_-_U-g-g-B-o-y.jpg",
+    "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/clubs/243.png",
+    "type" : "Stadium - Current",
+    "description" : "Give all Real Madrid players on the pitch a +10 bonus",
+    "wikipediaUrl" : "https://en.wikipedia.org/wiki/Santiago_Bernab%C3%A9u_Stadium",
+    "googleMapsUrl" : "https://goo.gl/maps/aZ9nW"
+  },
+  {
+    "name": "Allianz Arena",
+    "imageUrl": "http://www.bestourism.com/img/items/big/1378/Allianz-Arena-in-Germany_General-view_5474.jpg",
+    "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/clubs/21.png",
+    "type" : "Stadium - Current",
+    "description" : "Give all FC Bayern players on the pitch a +10 bonus",
+    "wikipediaUrl" : "https://en.wikipedia.org/wiki/Allianz_Arena",
+    "googleMapsUrl" : "https://goo.gl/maps/XmT75"
+  },
+  {
+    "name": "Olympiastadion",
+    "imageUrl": "http://polpix.sueddeutsche.com/bild/1.1307463.1355392791/860x860/muenchner-olympiastadion.jpg",
+    "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/clubs/21.png",
+    "type" : "Stadium - Classic",
+    "description" : "Give all FC Bayern players on the pitch a +5 bonus",
+    "wikipediaUrl" : "https://en.wikipedia.org/wiki/Olympiastadion_(Munich)",
+    "googleMapsUrl" : "https://goo.gl/maps/o3U2R"
+  },
+  {
+    "name": "Amsterdam Arena",
+    "imageUrl": "http://www.football-oranje.com/wp-content/uploads/2014/09/arena-a.jpg",
+    "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/nations/34.png",
+    "type" : "Stadium - Current",
+    "description" : "Give all Dutch players on the pitch a +10 bonus",
+    "wikipediaUrl" : "https://en.wikipedia.org/wiki/Amsterdam_Arena",
+    "googleMapsUrl" : "https://goo.gl/maps/achi1"
+  },
+  {
+    "name": "Amsterdam Arena",
+    "imageUrl": "http://www.football-oranje.com/wp-content/uploads/2014/09/arena-a.jpg",
+    "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/nations/34.png",
+    "type" : "Stadium - Current",
+    "description" : "Give all Dutch players on the pitch a +10 bonus",
+    "wikipediaUrl" : "https://en.wikipedia.org/wiki/Amsterdam_Arena",
+    "googleMapsUrl" : "https://goo.gl/maps/achi1"
+  },
+  {
+    "name": "Yankee Stadium",
+    "imageUrl": "http://therealdeal.com/wp-content/uploads/2014/05/soccer-at-yankee-stadiumTOP.gif",
+    "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/clubs/112828.png",
+    "type" : "Stadium - Current",
+    "description" : "Give all New York City players on the pitch a +10 bonus",
+    "wikipediaUrl" : "https://en.wikipedia.org/wiki/Yankee_Stadium",
+    "googleMapsUrl" : "https://goo.gl/maps/r73jl"
+  },
+  {
+    "name": "Camp Nou",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Camp_Nou_aerial_%28cropped%29.jpg/300px-Camp_Nou_aerial_%28cropped%29.jpg",
+    "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/clubs/241.png",
+    "type" : "Stadium - Current",
+    "description" : "Give all FC Barcelona players on the pitch a +10 bonus",
+    "wikipediaUrl" : "https://en.wikipedia.org/wiki/Camp_Nou",
+    "googleMapsUrl" : "https://goo.gl/maps/DAPum"
+  },
+  {
+    "name": "Stadio San Paolo",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/San_Paolo_-_Curva_A.jpg/300px-San_Paolo_-_Curva_A.jpg",
+    "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/clubs/48.png",
+    "type" : "Stadium - Current",
+    "description" : "Give all Napoli players on the pitch a +10 bonus",
+    "wikipediaUrl" : "https://en.wikipedia.org/wiki/Stadio_San_Paolo",
+    "googleMapsUrl" : "https://goo.gl/maps/BfsZi"
+  },
+  {
+    "name": "Wembley",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Wembley_Stadium_-_USA_v_England.jpg",
+    "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/nations/14.png",
+    "type" : "Stadium - Current",
+    "description" : "Give all English players on the pitch a +10 bonus",
+    "wikipediaUrl" : "https://en.wikipedia.org/wiki/Wembley_Stadium",
+    "googleMapsUrl" : "https://goo.gl/maps/YpCQR"
+  },
+  {
+    "name": "Old Wembley",
+    "imageUrl": "http://www.standard.co.uk/incoming/article8888951.ece/alternates/w620/WembleyOld.jpg",
+    "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/nations/14.png",
+    "type" : "Stadium - Classic",
+    "description" : "Give all English players on the pitch a +5 bonus",
+    "wikipediaUrl" : "https://en.wikipedia.org/wiki/Wembley_Stadium_(1923)",
+    "googleMapsUrl" : "https://goo.gl/maps/YpCQR"
+  }
+]

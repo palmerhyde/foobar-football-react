@@ -17,6 +17,36 @@ module.exports = React.createClass({
             borderColor: "gold"
         };
 
+        var attributes;
+
+        switch (this.props.move.type) {
+            case "Single":
+                attributes = <div className="battle">
+                    {this.props.move.attribute1a}<br/>
+                    VS<br/>
+                    {this.props.move.attribute1b}
+                </div>
+                break;
+            case "Double":
+                attributes = <div className="battle">
+                    {this.props.move.attribute1a}<br/>
+                    {this.props.move.attribute2a}<br/>
+                    VS<br/>
+                    {this.props.move.attribute1b}<br/>
+                    {this.props.move.attribute2b}
+                </div>
+                break;
+            case "Team":
+                attributes = <div className="battle">
+                    {this.props.move.attribute1a}<br/>
+                    {this.props.move.attribute2a}<br/>
+                    VS<br/>
+                    {this.props.move.attribute1b}<br/>
+                    {this.props.move.attribute2b}
+                </div>
+                break;
+        }
+
         return (
             <div className="card">
                 <div class="clear"></div>
@@ -27,13 +57,9 @@ module.exports = React.createClass({
                     <img alt="picture" src={this.props.move.imageUrl} />
                 </div>
                 <div className="type">
-                    Move
+                    Move - {this.props.move.type}
                 </div>
-                <div className="battle">
-                    Short Passing<br/>
-                    VS<br/>
-                    Interceptions
-                </div>
+                {attributes}
             </div>
         );
     }
