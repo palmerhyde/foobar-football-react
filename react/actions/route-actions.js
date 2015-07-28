@@ -17,5 +17,10 @@ module.exports = Flux.createActions({
         return {
             actionType: Constants.RECEIVE_STADIUMS
         }
+    },
+    receiveChants: function() {
+        return {
+            actionType: Constants.RECEIVE_CHANTS
+        }
     }
 });

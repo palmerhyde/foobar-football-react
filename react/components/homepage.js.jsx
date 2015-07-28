@@ -13,7 +13,8 @@ module.exports = React.createClass({
                         <Link to="Match" params={{ match_id: "666" }}>Match</Link> |
                         <Link to="Players">Players</Link> |
                         <Link to="Moves">Moves</Link> |
-                        <Link to="Stadiums">Stadiums</Link>
+                        <Link to="Stadiums">Stadiums</Link> |
+                        <Link to="Chants">Chants</Link>
                     </div>
                 </header>
                 <h1>Home page</h1>

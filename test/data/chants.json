@@ -1,0 +1,18 @@
+[
+  {
+    "name" : "Carefree",
+    "imageUrl" : "http://chelsea-fans.weebly.com/uploads/1/4/4/7/14474740/1358719_orig.jpg",
+    "synergyUrl" : "https://fifa15.content.easports.com/fifa/fltOnlineAssets/8D941B48-51BB-4B87-960A-06A61A62EBC0/2015/fut/items/images/clubbadges/html5/normal/44x44/l5.png",
+    "type" : "Chant - Team",
+    "description" : "Give all Chelsea players on the pitch a +10 bonus",
+    "chantUrl" : "https://en.wikipedia.org/wiki/Stamford_Bridge_(stadium)"
+  },
+  {
+    "name": "You'll never walk alone",
+    "imageUrl": "http://www.arsenal.com/assets/_files/scaled/498x244/jul_08/gun__1216028546_highbury12.jpg?ic=2ec699T",
+    "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/clubs/1.png",
+    "type" : "Chant - Team",
+    "description" : "Give all Liverpool players on the pitch a +5 bonus",
+    "chantUrl" : "https://goo.gl/maps/B5OV7"
+  }
+]
