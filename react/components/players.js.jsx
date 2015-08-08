@@ -1,5 +1,5 @@
 var React = require('react');
-var Player = require('./blank-player.js.jsx');
+var Player = require('./player.js.jsx');
 var Goalkeeper = require('./goalkeeper.js.jsx');
 var MatchStore = require('./../stores/match-store');
 
@@ -46,12 +46,7 @@ module.exports = React.createClass({
                 {this.state.players.map(function (player, index) {
                     return (
                         <div style={style}>
-                            {
-                                player.position == "GK" ?
-                                    <Goalkeeper player={player}  />
-                                    :
-                                    <Player player={player}  />
-                                }
+                            <Player player={player}  />
                         </div>
                     )
                 }, this)

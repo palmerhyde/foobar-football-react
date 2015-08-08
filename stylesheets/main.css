@@ -162,15 +162,25 @@ body {
 }
 
 .card .club {
-    width: 50px;
+    position: absolute;
+    width: 40px;
+    top:35px;
+    left: 20px;
+    opacity: 0.2;
 }
 
 .card .nation {
-    width: 50px;
+    width: 44px;
+    position: absolute;
+    top: 40px;
+    left: 165px;
+    opacity: 0.2
 }
 
 .wikipedia {
-    width: 30px;
+    width: 25px;
+    margin-top: 10px;
+    margin-left: 0px;
 }
 
 .googlemaps {

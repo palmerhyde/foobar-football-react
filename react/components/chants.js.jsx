@@ -37,7 +37,7 @@ module.exports = React.createClass({
                 {this.state.chants.map(function (chant, index) {
                     return (
                         <div style={style}>
-                            <Chant stadium={chant}  />
+                            <Chant chant={chant}  />
                         </div>
                     )
                 }, this)

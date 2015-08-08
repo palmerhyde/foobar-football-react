@@ -89,7 +89,7 @@ module.exports = React.createClass({
                 this.state.chants.map(function (chant, index) {
                     return (
                         React.createElement("div", {style: style}, 
-                            React.createElement(Chant, {stadium: chant})
+                            React.createElement(Chant, {chant: chant})
                         )
                     )
                 }, this)
@@ -369,7 +369,7 @@ module.exports = React.createClass({
                      this.props.chant.chantUrl ?
                         React.createElement("a", {href: this.props.chant.chantUrl, target: "_blank"}, 
                             React.createElement("img", {alt: "wikipedia", className: "wikipedia bottomRight", 
-                                 src: "http://localhost:63343/foobar-football-react/assets/images/wikipedia.png"})
+                                 src: "data:image/png;base64,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"})
                         ) :
                         null
                     
@@ -881,29 +881,135 @@ module.exports = React.createClass({
             return false
         }
         else {
-            var style = {
-                backgroundImage: 'url(' + this.props.player.imageUrl + ')',
-                backgroundColor: "purple",
-                borderColor: "gold"
+            var photoDivStyle = {
+                borderLeft: 'black',
+                borderLeftWidth: '1px',
+                borderLeftStyle: 'solid',
+                borderRight: 'black',
+                borderRightWidth: '1px',
+                borderRightStyle: 'solid'
+            };
+
+            var photoImageStyle = {
+                width: '115px',
+                display: 'block',
+                marginLeft: 'auto',
+                marginRight: 'auto'
+            };
+
+            var attributesLeft = {
+                textAlign : 'left',
+                boxSizing : 'border-box',
+                padding : '4px',
+                fontWeight : "bold",
+                fontFamily: "PremierLeague",
+                fontSize: "14px",
+                backgroundColor : "#999",
+                color: "black"
+
+            };
+
+            var attributesRight = {
+                textAlign : 'center',
+                boxSizing : 'border-box',
+                padding : '4px',
+                fontWeight : "bold",
+                fontFamily: "PremierLeague",
+                fontSize: "14px",
+                backgroundColor : "#999",
+                color : "white"
             };
 
             return (
 
                 React.createElement("div", {className: "card"}, 
-
                     React.createElement("div", null, 
-                        React.createElement("img", {alt: "club", className: "club", src: "http://futhead.cursecdn.com/static/img/15/clubs/243.png"}), 
-                        React.createElement("img", {alt: "nation", className: "nation", src: "http://futhead.cursecdn.com/static/img/15/nations/52.png"}), 
-                        React.createElement("img", {alt: "wikipedia", className: "wikipedia", src: "http://localhost:63342/foobar-football-react/assets/images/wikipedia.jpg"})
+                        React.createElement("img", {alt: "club", className: "club", src: this.props.player.clubImageUrl})
                     ), 
-                    React.createElement("div", {className: "clear"}), 
                     React.createElement("div", null, 
-                    React.createElement("div", {className: "circlecard", style: style})
+                        React.createElement("img", {alt: "nation", className: "nation", src: this.props.player.nationImageUrl})
                     ), 
-                    React.createElement("div", {className: "type"}, 
+                    React.createElement("div", {className: "title"}, 
                         this.props.player.name
                     ), 
-                    React.createElement("div", {className: "attrs"}
+                    React.createElement("div", {className: "photo", style: photoDivStyle}, 
+                        React.createElement("img", {src: this.props.player.imageUrl, style: photoImageStyle})
+                    ), 
+                    React.createElement("div", {className: "type"}, 
+                        "Player - ", this.props.player.position
+                    ), 
+                    React.createElement("div", {className: "pure-u-3-3 attrs"}, 
+                         this.props.player.position == "GK" ?
+                            React.createElement("div", null, 
+                                React.createElement("div", {className: "pure-g"}, 
+                                    React.createElement("div", {className: "pure-u-1-3", 
+                                         style: attributesRight}, this.props.player.crossing), 
+                                    React.createElement("div", {className: "pure-u-2-3", style: attributesLeft}, "Diving")
+                                ), 
+                                React.createElement("div", {className: "pure-g"}, 
+                                    React.createElement("div", {className: "pure-u-1-3", 
+                                         style: attributesRight}, this.props.player.dribbling), 
+                                    React.createElement("div", {className: "pure-u-2-3", style: attributesLeft}, "Handling")
+                                ), 
+                                React.createElement("div", {className: "pure-g"}, 
+                                    React.createElement("div", {className: "pure-u-1-3", 
+                                         style: attributesRight}, this.props.player.finishing), 
+                                    React.createElement("div", {className: "pure-u-2-3", style: attributesLeft}, "Kicking")
+                                ), 
+                                React.createElement("div", {className: "pure-g"}, 
+                                    React.createElement("div", {className: "pure-u-1-3", 
+                                         style: attributesRight}, this.props.player.heading), 
+                                    React.createElement("div", {className: "pure-u-2-3", style: attributesLeft}, "Reflex")
+                                ), 
+                                React.createElement("div", {className: "pure-g"}, 
+                                    React.createElement("div", {className: "pure-u-1-3", 
+                                         style: attributesRight}, this.props.player.interceptions), 
+                                    React.createElement("div", {className: "pure-u-2-3", style: attributesLeft}, "Speed")
+                                ), 
+                                React.createElement("div", {className: "pure-g"}, 
+                                    React.createElement("div", {className: "pure-u-1-3", 
+                                         style: attributesRight}, this.props.player.longpassing), 
+                                    React.createElement("div", {className: "pure-u-2-3", style: attributesLeft}, "Positioning")
+                                )
+                            )
+                            :
+                            React.createElement("div", null, 
+                                React.createElement("div", {className: "pure-g"}, 
+                                    React.createElement("div", {className: "pure-u-1-3", 
+                                         style: attributesRight}, this.props.player.crossing), 
+                                    React.createElement("div", {className: "pure-u-2-3", style: attributesLeft}, "Pace")
+                                ), 
+                                React.createElement("div", {className: "pure-g"}, 
+                                    React.createElement("div", {className: "pure-u-1-3", 
+                                         style: attributesRight}, this.props.player.dribbling), 
+                                    React.createElement("div", {className: "pure-u-2-3", style: attributesLeft}, "Passing")
+                                ), 
+                                React.createElement("div", {className: "pure-g"}, 
+                                    React.createElement("div", {className: "pure-u-1-3", 
+                                         style: attributesRight}, this.props.player.finishing), 
+                                    React.createElement("div", {className: "pure-u-2-3", style: attributesLeft}, "Shooting")
+                                ), 
+                                React.createElement("div", {className: "pure-g"}, 
+                                    React.createElement("div", {className: "pure-u-1-3", 
+                                         style: attributesRight}, this.props.player.heading), 
+                                    React.createElement("div", {className: "pure-u-2-3", style: attributesLeft}, "Dribbling")
+                                ), 
+                                React.createElement("div", {className: "pure-g"}, 
+                                    React.createElement("div", {className: "pure-u-1-3", 
+                                         style: attributesRight}, this.props.player.interceptions), 
+                                    React.createElement("div", {className: "pure-u-2-3", style: attributesLeft}, "Defending")
+                                ), 
+                                React.createElement("div", {className: "pure-g"}, 
+                                    React.createElement("div", {className: "pure-u-1-3", 
+                                         style: attributesRight}, this.props.player.longpassing), 
+                                    React.createElement("div", {className: "pure-u-2-3", style: attributesLeft}, "Physical")
+                                )
+                            )
+                        
+                    ), 
+                    React.createElement("a", {href: this.props.player.wikipediaUrl, target: "_blank"}, 
+                        React.createElement("img", {alt: "wikipedia", className: "wikipedia", 
+                             src: "http://localhost:63342/foobar-football-react/assets/images/wikipedia.png"})
                     )
                 )
             );
@@ -913,7 +1019,7 @@ module.exports = React.createClass({
 
 },{"react":240}],21:[function(require,module,exports){
 var React = require('react');
-var Player = require('./blank-player.js.jsx');
+var Player = require('./player.js.jsx');
 var Goalkeeper = require('./goalkeeper.js.jsx');
 var MatchStore = require('./../stores/match-store');
 
@@ -960,12 +1066,7 @@ module.exports = React.createClass({
                 this.state.players.map(function (player, index) {
                     return (
                         React.createElement("div", {style: style}, 
-                            
-                                player.position == "GK" ?
-                                    React.createElement(Goalkeeper, {player: player})
-                                    :
-                                    React.createElement(Player, {player: player})
-                                
+                            React.createElement(Player, {player: player})
                         )
                     )
                 }, this)
@@ -974,7 +1075,7 @@ module.exports = React.createClass({
         );
     }
 });
-},{"./../stores/match-store":28,"./blank-player.js.jsx":8,"./goalkeeper.js.jsx":12,"react":240}],22:[function(require,module,exports){
+},{"./../stores/match-store":28,"./goalkeeper.js.jsx":12,"./player.js.jsx":20,"react":240}],22:[function(require,module,exports){
 var React = require('react');
 
 module.exports = React.createClass({
@@ -1899,32 +2000,64 @@ function isUndefined(arg) {
 var process = module.exports = {};
 var queue = [];
 var draining = false;
+var currentQueue;
+var queueIndex = -1;
+
+function cleanUpNextTick() {
+    draining = false;
+    if (currentQueue.length) {
+        queue = currentQueue.concat(queue);
+    } else {
+        queueIndex = -1;
+    }
+    if (queue.length) {
+        drainQueue();
+    }
+}
 
 function drainQueue() {
     if (draining) {
         return;
     }
+    var timeout = setTimeout(cleanUpNextTick);
     draining = true;
-    var currentQueue;
+
     var len = queue.length;
     while(len) {
         currentQueue = queue;
         queue = [];
-        var i = -1;
-        while (++i < len) {
-            currentQueue[i]();
+        while (++queueIndex < len) {
+            currentQueue[queueIndex].run();
         }
+        queueIndex = -1;
         len = queue.length;
     }
+    currentQueue = null;
     draining = false;
+    clearTimeout(timeout);
 }
+
 process.nextTick = function (fun) {
-    queue.push(fun);
-    if (!draining) {
+    var args = new Array(arguments.length - 1);
+    if (arguments.length > 1) {
+        for (var i = 1; i < arguments.length; i++) {
+            args[i - 1] = arguments[i];
+        }
+    }
+    queue.push(new Item(fun, args));
+    if (queue.length === 1 && !draining) {
         setTimeout(drainQueue, 0);
     }
 };
 
+// v8 likes predictible objects
+function Item(fun, array) {
+    this.fun = fun;
+    this.array = array;
+}
+Item.prototype.run = function () {
+    this.fun.apply(null, this.array);
+};
 process.title = 'browser';
 process.browser = true;
 process.env = {};
@@ -2202,7 +2335,7 @@ module.exports = Store;
  * @copyright Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors (Conversion to ES6 API by Jake Archibald)
  * @license   Licensed under MIT license
  *            See https://raw.githubusercontent.com/jakearchibald/es6-promise/master/LICENSE
- * @version   2.1.1
+ * @version   2.3.0
  */
 
 (function() {
@@ -2232,7 +2365,9 @@ module.exports = Store;
     var lib$es6$promise$asap$$len = 0;
     var lib$es6$promise$asap$$toString = {}.toString;
     var lib$es6$promise$asap$$vertxNext;
-    function lib$es6$promise$asap$$asap(callback, arg) {
+    var lib$es6$promise$asap$$customSchedulerFn;
+
+    var lib$es6$promise$asap$$asap = function asap(callback, arg) {
       lib$es6$promise$asap$$queue[lib$es6$promise$asap$$len] = callback;
       lib$es6$promise$asap$$queue[lib$es6$promise$asap$$len + 1] = arg;
       lib$es6$promise$asap$$len += 2;
@@ -2240,11 +2375,21 @@ module.exports = Store;
         // If len is 2, that means that we need to schedule an async flush.
         // If additional callbacks are queued before the queue is flushed, they
         // will be processed by this flush that we are scheduling.
-        lib$es6$promise$asap$$scheduleFlush();
+        if (lib$es6$promise$asap$$customSchedulerFn) {
+          lib$es6$promise$asap$$customSchedulerFn(lib$es6$promise$asap$$flush);
+        } else {
+          lib$es6$promise$asap$$scheduleFlush();
+        }
       }
     }
 
-    var lib$es6$promise$asap$$default = lib$es6$promise$asap$$asap;
+    function lib$es6$promise$asap$$setScheduler(scheduleFn) {
+      lib$es6$promise$asap$$customSchedulerFn = scheduleFn;
+    }
+
+    function lib$es6$promise$asap$$setAsap(asapFn) {
+      lib$es6$promise$asap$$asap = asapFn;
+    }
 
     var lib$es6$promise$asap$$browserWindow = (typeof window !== 'undefined') ? window : undefined;
     var lib$es6$promise$asap$$browserGlobal = lib$es6$promise$asap$$browserWindow || {};
@@ -2377,7 +2522,7 @@ module.exports = Store;
     }
 
     function lib$es6$promise$$internal$$handleForeignThenable(promise, thenable, then) {
-       lib$es6$promise$asap$$default(function(promise) {
+       lib$es6$promise$asap$$asap(function(promise) {
         var sealed = false;
         var error = lib$es6$promise$$internal$$tryThen(then, thenable, function(value) {
           if (sealed) { return; }
@@ -2458,7 +2603,7 @@ module.exports = Store;
       promise._state = lib$es6$promise$$internal$$FULFILLED;
 
       if (promise._subscribers.length !== 0) {
-        lib$es6$promise$asap$$default(lib$es6$promise$$internal$$publish, promise);
+        lib$es6$promise$asap$$asap(lib$es6$promise$$internal$$publish, promise);
       }
     }
 
@@ -2467,7 +2612,7 @@ module.exports = Store;
       promise._state = lib$es6$promise$$internal$$REJECTED;
       promise._result = reason;
 
-      lib$es6$promise$asap$$default(lib$es6$promise$$internal$$publishRejection, promise);
+      lib$es6$promise$asap$$asap(lib$es6$promise$$internal$$publishRejection, promise);
     }
 
     function lib$es6$promise$$internal$$subscribe(parent, child, onFulfillment, onRejection) {
@@ -2481,7 +2626,7 @@ module.exports = Store;
       subscribers[length + lib$es6$promise$$internal$$REJECTED]  = onRejection;
 
       if (length === 0 && parent._state) {
-        lib$es6$promise$asap$$default(lib$es6$promise$$internal$$publish, parent);
+        lib$es6$promise$asap$$asap(lib$es6$promise$$internal$$publish, parent);
       }
     }
 
@@ -2738,7 +2883,7 @@ module.exports = Store;
     /**
       Promise objects represent the eventual result of an asynchronous operation. The
       primary way of interacting with a promise is through its `then` method, which
-      registers callbacks to receive either a promise’s eventual value or the reason
+      registers callbacks to receive either a promise's eventual value or the reason
       why the promise cannot be fulfilled.
 
       Terminology
@@ -2861,6 +3006,9 @@ module.exports = Store;
     lib$es6$promise$promise$$Promise.race = lib$es6$promise$promise$race$$default;
     lib$es6$promise$promise$$Promise.resolve = lib$es6$promise$promise$resolve$$default;
     lib$es6$promise$promise$$Promise.reject = lib$es6$promise$promise$reject$$default;
+    lib$es6$promise$promise$$Promise._setScheduler = lib$es6$promise$asap$$setScheduler;
+    lib$es6$promise$promise$$Promise._setAsap = lib$es6$promise$asap$$setAsap;
+    lib$es6$promise$promise$$Promise._asap = lib$es6$promise$asap$$asap;
 
     lib$es6$promise$promise$$Promise.prototype = {
       constructor: lib$es6$promise$promise$$Promise,
@@ -3071,7 +3219,7 @@ module.exports = Store;
 
         if (state) {
           var callback = arguments[state - 1];
-          lib$es6$promise$asap$$default(function(){
+          lib$es6$promise$asap$$asap(function(){
             lib$es6$promise$$internal$$invokeCallback(state, child, callback, result);
           });
         } else {
@@ -10856,7 +11004,7 @@ if ("production" !== process.env.NODE_ENV) {
       if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined') {
         console.debug(
           'Download the React DevTools for a better development experience: ' +
-          'http://fb.me/react-devtools'
+          'https://fb.me/react-devtools'
         );
       }
     }
@@ -10883,7 +11031,7 @@ if ("production" !== process.env.NODE_ENV) {
       if (!expectedFeatures[i]) {
         console.error(
           'One or more ES5 shim/shams expected by React are not available: ' +
-          'http://fb.me/react-warning-polyfills'
+          'https://fb.me/react-warning-polyfills'
         );
         break;
       }
@@ -10891,7 +11039,7 @@ if ("production" !== process.env.NODE_ENV) {
   }
 }
 
-React.version = '0.13.2';
+React.version = '0.13.3';
 
 module.exports = React;
 
@@ -12398,7 +12546,7 @@ var ReactClass = {
         ("production" !== process.env.NODE_ENV ? warning(
           this instanceof Constructor,
           'Something is calling a React component directly. Use a factory or ' +
-          'JSX instead. See: http://fb.me/react-legacyfactory'
+          'JSX instead. See: https://fb.me/react-legacyfactory'
         ) : null);
       }
 
@@ -12610,20 +12758,38 @@ ReactComponent.prototype.forceUpdate = function(callback) {
  */
 if ("production" !== process.env.NODE_ENV) {
   var deprecatedAPIs = {
-    getDOMNode: 'getDOMNode',
-    isMounted: 'isMounted',
-    replaceProps: 'replaceProps',
-    replaceState: 'replaceState',
-    setProps: 'setProps'
+    getDOMNode: [
+      'getDOMNode',
+      'Use React.findDOMNode(component) instead.'
+    ],
+    isMounted: [
+      'isMounted',
+      'Instead, make sure to clean up subscriptions and pending requests in ' +
+      'componentWillUnmount to prevent memory leaks.'
+    ],
+    replaceProps: [
+      'replaceProps',
+      'Instead, call React.render again at the top level.'
+    ],
+    replaceState: [
+      'replaceState',
+      'Refactor your code to use setState instead (see ' +
+      'https://github.com/facebook/react/issues/3236).'
+    ],
+    setProps: [
+      'setProps',
+      'Instead, call React.render again at the top level.'
+    ]
   };
-  var defineDeprecationWarning = function(methodName, displayName) {
+  var defineDeprecationWarning = function(methodName, info) {
     try {
       Object.defineProperty(ReactComponent.prototype, methodName, {
         get: function() {
           ("production" !== process.env.NODE_ENV ? warning(
             false,
-            '%s(...) is deprecated in plain JavaScript React classes.',
-            displayName
+            '%s(...) is deprecated in plain JavaScript React classes. %s',
+            info[0],
+            info[1]
           ) : null);
           return undefined;
         }
@@ -12972,6 +13138,7 @@ var ReactCompositeComponentMixin = {
     this._pendingReplaceState = false;
     this._pendingForceUpdate = false;
 
+    var childContext;
     var renderedElement;
 
     var previouslyMounting = ReactLifeCycle.currentlyMountingInstance;
@@ -12986,7 +13153,8 @@ var ReactCompositeComponentMixin = {
         }
       }
 
-      renderedElement = this._renderValidatedComponent();
+      childContext = this._getValidatedChildContext(context);
+      renderedElement = this._renderValidatedComponent(childContext);
     } finally {
       ReactLifeCycle.currentlyMountingInstance = previouslyMounting;
     }
@@ -13000,7 +13168,7 @@ var ReactCompositeComponentMixin = {
       this._renderedComponent,
       rootID,
       transaction,
-      this._processChildContext(context)
+      this._mergeChildContext(context, childContext)
     );
     if (inst.componentDidMount) {
       transaction.getReactMountReady().enqueue(inst.componentDidMount, inst);
@@ -13130,7 +13298,7 @@ var ReactCompositeComponentMixin = {
    * @return {object}
    * @private
    */
-  _processChildContext: function(currentContext) {
+  _getValidatedChildContext: function(currentContext) {
     var inst = this._instance;
     var childContext = inst.getChildContext && inst.getChildContext();
     if (childContext) {
@@ -13155,6 +13323,13 @@ var ReactCompositeComponentMixin = {
           name
         ) : invariant(name in inst.constructor.childContextTypes));
       }
+      return childContext;
+    }
+    return null;
+  },
+
+  _mergeChildContext: function(currentContext, childContext) {
+    if (childContext) {
       return assign({}, currentContext, childContext);
     }
     return currentContext;
@@ -13414,6 +13589,10 @@ var ReactCompositeComponentMixin = {
       return inst.state;
     }
 
+    if (replace && queue.length === 1) {
+      return queue[0];
+    }
+
     var nextState = assign({}, replace ? queue[0] : inst.state);
     for (var i = replace ? 1 : 0; i < queue.length; i++) {
       var partial = queue[i];
@@ -13483,13 +13662,14 @@ var ReactCompositeComponentMixin = {
   _updateRenderedComponent: function(transaction, context) {
     var prevComponentInstance = this._renderedComponent;
     var prevRenderedElement = prevComponentInstance._currentElement;
-    var nextRenderedElement = this._renderValidatedComponent();
+    var childContext = this._getValidatedChildContext();
+    var nextRenderedElement = this._renderValidatedComponent(childContext);
     if (shouldUpdateReactComponent(prevRenderedElement, nextRenderedElement)) {
       ReactReconciler.receiveComponent(
         prevComponentInstance,
         nextRenderedElement,
         transaction,
-        this._processChildContext(context)
+        this._mergeChildContext(context, childContext)
       );
     } else {
       // These two IDs are actually the same! But nothing should rely on that.
@@ -13505,7 +13685,7 @@ var ReactCompositeComponentMixin = {
         this._renderedComponent,
         thisID,
         transaction,
-        this._processChildContext(context)
+        this._mergeChildContext(context, childContext)
       );
       this._replaceNodeWithMarkupByID(prevComponentID, nextMarkup);
     }
@@ -13543,11 +13723,12 @@ var ReactCompositeComponentMixin = {
   /**
    * @private
    */
-  _renderValidatedComponent: function() {
+  _renderValidatedComponent: function(childContext) {
     var renderedComponent;
     var previousContext = ReactContext.current;
-    ReactContext.current = this._processChildContext(
-      this._currentElement._context
+    ReactContext.current = this._mergeChildContext(
+      this._currentElement._context,
+      childContext
     );
     ReactCurrentOwner.current = this;
     try {
@@ -13916,6 +14097,7 @@ var ReactDOM = mapObject({
 
   // SVG
   circle: 'circle',
+  clipPath: 'clipPath',
   defs: 'defs',
   ellipse: 'ellipse',
   g: 'g',
@@ -14067,11 +14249,13 @@ function assertValidProps(props) {
       'Can only set one of `children` or `props.dangerouslySetInnerHTML`.'
     ) : invariant(props.children == null));
     ("production" !== process.env.NODE_ENV ? invariant(
-      props.dangerouslySetInnerHTML.__html != null,
+      typeof props.dangerouslySetInnerHTML === 'object' &&
+      '__html' in props.dangerouslySetInnerHTML,
       '`props.dangerouslySetInnerHTML` must be in the form `{__html: ...}`. ' +
-      'Please visit http://fb.me/react-invariant-dangerously-set-inner-html ' +
+      'Please visit https://fb.me/react-invariant-dangerously-set-inner-html ' +
       'for more information.'
-    ) : invariant(props.dangerouslySetInnerHTML.__html != null));
+    ) : invariant(typeof props.dangerouslySetInnerHTML === 'object' &&
+    '__html' in props.dangerouslySetInnerHTML));
   }
   if ("production" !== process.env.NODE_ENV) {
     ("production" !== process.env.NODE_ENV ? warning(
@@ -16877,7 +17061,7 @@ function warnAndMonitorForKeyUse(message, element, parentType) {
 
   ("production" !== process.env.NODE_ENV ? warning(
     false,
-    message + '%s%s See http://fb.me/react-warning-keys for more information.',
+    message + '%s%s See https://fb.me/react-warning-keys for more information.',
     parentOrOwnerAddendum,
     childOwnerAddendum
   ) : null);
@@ -21698,6 +21882,7 @@ var MUST_USE_ATTRIBUTE = DOMProperty.injection.MUST_USE_ATTRIBUTE;
 
 var SVGDOMPropertyConfig = {
   Properties: {
+    clipPath: MUST_USE_ATTRIBUTE,
     cx: MUST_USE_ATTRIBUTE,
     cy: MUST_USE_ATTRIBUTE,
     d: MUST_USE_ATTRIBUTE,
@@ -21743,6 +21928,7 @@ var SVGDOMPropertyConfig = {
     y: MUST_USE_ATTRIBUTE
   },
   DOMAttributeNames: {
+    clipPath: 'clip-path',
     fillOpacity: 'fill-opacity',
     fontFamily: 'font-family',
     fontSize: 'font-size',
@@ -24555,6 +24741,7 @@ var shouldWrap = {
   // Force wrapping for SVG elements because if they get created inside a <div>,
   // they will be initialized in the wrong namespace (and will not display).
   'circle': true,
+  'clipPath': true,
   'defs': true,
   'ellipse': true,
   'g': true,
@@ -24597,6 +24784,7 @@ var markupWrap = {
   'th': trWrap,
 
   'circle': svgWrap,
+  'clipPath': svgWrap,
   'defs': svgWrap,
   'ellipse': svgWrap,
   'g': svgWrap,

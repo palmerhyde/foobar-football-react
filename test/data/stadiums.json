@@ -196,5 +196,14 @@
     "description" : "Give all English players on the pitch a +5 bonus",
     "wikipediaUrl" : "https://en.wikipedia.org/wiki/Wembley_Stadium_(1923)",
     "googleMapsUrl" : "https://goo.gl/maps/YpCQR"
+  },
+  {
+    "name": "Anfield",
+    "imageUrl": "https://fearlessreds.files.wordpress.com/2012/05/anfield-stadium-liverpool-wallpapers-1024x7681.jpg",
+    "synergyUrl" : "http://futhead.cursecdn.com/static/img/15/clubs/9.png",
+    "type" : "Stadium - Current",
+    "description" : "Give all Liverpool players on the pitch a +10 bonus",
+    "wikipediaUrl" : "https://en.wikipedia.org/wiki/Anfield",
+    "googleMapsUrl" : "https://goo.gl/maps/8dc90"
   }
 ]
