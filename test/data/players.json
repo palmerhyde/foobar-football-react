@@ -1,0 +1,271 @@
+[
+  {
+    "name" : "George Best",
+    "move" : "",
+    "imageUrl" : "",
+    "description" : "",
+    "rank" : "A",
+    "up" : {
+      "type" : "Attack",
+      "combo" : "Shot",
+      "pace" : 1,
+      "damage" : 12,
+      "blockDamage" : 3,
+      "buildup" : 2,
+      "cost" : 1,
+      "repeatCost" : 0,
+      "repeatDamage" : 0
+    },
+    "down" : {
+      "type" : "Attack",
+      "combo" : "Shot",
+      "pace" : 4,
+      "damage" : 45,
+      "blockDamage" : 1,
+      "buildup" : 3,
+      "cost" : 3,
+      "repeatCost" : 0,
+      "repeatDamage" : 0
+    }
+  },
+  {
+    "name" : "Messi",
+    "move" : "",
+    "imageUrl" : "",
+    "description" : "",
+    "rank" : "K",
+    "up" : {
+      "type" : "Attack",
+      "combo" : "Build-up",
+      "pace" : 2,
+      "damage" : 7,
+      "blockDamage" : 1,
+      "buildup" : 2,
+      "cost" : 1,
+      "repeatCost" : 2,
+      "repeatDamage" : 7
+    },
+    "down" : {
+      "type" : "Attack",
+      "combo" : "Build-up",
+      "pace" : 2,
+      "damage" : 7,
+      "blockDamage" : 1,
+      "buildup" : 2,
+      "cost" : 1,
+      "repeatCost" : 1,
+      "repeatDamage" : 7
+    }
+  },
+  {
+    "name" : "Ronaldo",
+    "move" : "",
+    "imageUrl" : "",
+    "description" : "",
+    "rank" : "Q",
+    "up" : {
+      "type" : "Attack",
+      "combo" : "Shot",
+      "pace" : 10,
+      "damage" : 10,
+      "blockDamage" : 2,
+      "buildup" : 3,
+      "cost" : 1,
+      "repeatCost" : 0,
+      "repeatDamage" : 0
+    },
+    "down" : {
+      "type" : "Attack",
+      "combo" : "Build-up",
+      "pace" : 10,
+      "damage" : 10,
+      "blockDamage" : 2,
+      "buildup" : 3,
+      "cost" : 1,
+      "repeatCost" : 0,
+      "repeatDamage" : 0
+    }
+  },
+  {
+    "name" : "Hazard",
+    "move" : "",
+    "imageUrl" : "",
+    "description" : "",
+    "rank" : "J",
+    "up" : {
+      "type" : "Attack",
+      "combo" : "Shot",
+      "pace" : 6,
+      "damage" : 8,
+      "blockDamage" : 3,
+      "buildup" : 1,
+      "cost" : 1,
+      "repeatCost" : 0,
+      "repeatDamage" : 0
+    },
+    "down" : {
+      "type" : "Attack",
+      "combo" : "Shot",
+      "pace" : 6,
+      "damage" : 8,
+      "blockDamage" : 3,
+      "buildup" : 1,
+      "cost" : 1,
+      "repeatCost" : 0,
+      "repeatDamage" : 0
+    }
+  },
+  {
+    "name": "Defender",
+    "move": "",
+    "imageUrl": "",
+    "description": "",
+    "rank": "10",
+    "up": {
+      "type": "Defend"
+    },
+    "down": {
+      "type": "Possession",
+      "combo": "Start",
+      "pace": 4,
+      "damage": 7,
+      "cost" : 2
+    }
+  },
+  {
+    "name": "Defender",
+    "move": "",
+    "imageUrl": "",
+    "description": "",
+    "rank": "9",
+    "up": {
+      "type": "Possession",
+      "combo": "Start",
+      "pace": 4,
+      "damage": 7,
+      "cost" : 2
+    },
+    "down": {
+      "type": "Defend"
+    }
+  },
+  {
+    "name": "Defender",
+    "move": "",
+    "imageUrl": "",
+    "description": "",
+    "rank": "8",
+    "up": {
+      "type": "Possession",
+      "combo": "Start",
+      "pace": 4,
+      "damage": 7,
+      "cost" : 2
+    },
+    "down": {
+      "type": "Defend"
+    }
+  },
+  {
+    "name": "Defender",
+    "move": "",
+    "imageUrl": "",
+    "description": "",
+    "rank": "7",
+    "up": {
+      "type": "Possession",
+      "combo": "Start",
+      "pace": 4,
+      "damage": 7,
+      "cost" : 2
+    },
+    "down": {
+      "type": "Defend"
+    }
+  },
+  {
+    "name": "John Terry",
+    "move": "",
+    "imageUrl": "",
+    "description": "",
+    "rank": "6",
+    "up": {
+      "type": "Attack",
+      "combo": "Run",
+      "pace": 4,
+      "damage": 6,
+      "cost" : 1
+    },
+    "down": {
+      "type": "Defend"
+    }
+  },
+  {
+    "name": "Attack defender",
+    "move": "",
+    "imageUrl": "",
+    "description": "",
+    "rank": "5",
+    "up": {
+      "type": "Attack",
+      "combo": "Run",
+      "pace": 4,
+      "damage": 6,
+      "cost" : 1
+    },
+    "down": {
+      "type": "Defend"
+    }
+  },
+  {
+    "name": "Attack counter",
+    "move": "",
+    "imageUrl": "",
+    "description": "",
+    "rank": "4",
+    "up": {
+      "type": "Attack",
+      "combo": "Run",
+      "pace": 4,
+      "damage": 4,
+      "cost" : 1
+    },
+    "down": {
+      "type": "Counter"
+    }
+  },
+  {
+    "name": "Attack counter",
+    "move": "",
+    "imageUrl": "",
+    "description": "",
+    "rank": "3",
+    "up": {
+      "type": "Attack",
+      "combo": "Run",
+      "pace": 4,
+      "damage": 3,
+      "cost" : 1
+    },
+    "down": {
+      "type": "Counter"
+    }
+  },
+  {
+    "name": "Attack counter",
+    "move": "",
+    "imageUrl": "",
+    "description": "",
+    "rank": "2",
+    "up": {
+      "type": "Attack",
+      "combo": "Run",
+      "pace": 4,
+      "damage": 2,
+      "cost" : 1
+    },
+    "down": {
+      "type": "Counter"
+    }
+  }
+]
