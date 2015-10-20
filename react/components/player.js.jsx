@@ -29,19 +29,21 @@ module.exports = React.createClass({
             var attributesLeft = {
                 textAlign : 'left',
                 boxSizing : 'border-box',
-                padding : '4px',
+                padding : '6px',
                 fontWeight : "bold",
                 fontFamily: "PremierLeague",
                 fontSize: "14px",
                 backgroundColor : "#999",
-                color: "black"
+                color: "black",
+                paddingLeft: '20px'
+
 
             };
 
             var attributesRight = {
                 textAlign : 'center',
                 boxSizing : 'border-box',
-                padding : '4px',
+                padding : '6px',
                 fontWeight : "bold",
                 fontFamily: "PremierLeague",
                 fontSize: "14px",
@@ -66,80 +68,80 @@ module.exports = React.createClass({
                     </div>
                     <div className="type">
                         Player - {this.props.player.position}
+                        <a href={this.props.player.wikipediaUrl} target="_blank">
+                            <img alt="wikipedia" className="wikipedia"
+                                 src="http://localhost:63342/foobar-football-react/assets/images/wikipedia.png"/>
+                        </a>
                     </div>
                     <div className="pure-u-3-3 attrs">
                         { this.props.player.position == "GK" ?
                             <div>
                                 <div className="pure-g">
-                                    <div className="pure-u-1-3"
-                                         style={attributesRight}>{this.props.player.crossing}</div>
                                     <div className="pure-u-2-3" style={attributesLeft}>Diving</div>
+                                    <div className="pure-u-1-3"
+                                         style={attributesRight}>{this.props.player.diving}</div>
                                 </div>
                                 <div className="pure-g">
-                                    <div className="pure-u-1-3"
-                                         style={attributesRight}>{this.props.player.dribbling}</div>
                                     <div className="pure-u-2-3" style={attributesLeft}>Handling</div>
+                                    <div className="pure-u-1-3"
+                                         style={attributesRight}>{this.props.player.handling}</div>
                                 </div>
                                 <div className="pure-g">
-                                    <div className="pure-u-1-3"
-                                         style={attributesRight}>{this.props.player.finishing}</div>
                                     <div className="pure-u-2-3" style={attributesLeft}>Kicking</div>
+                                    <div className="pure-u-1-3"
+                                         style={attributesRight}>{this.props.player.kicking}</div>
                                 </div>
                                 <div className="pure-g">
-                                    <div className="pure-u-1-3"
-                                         style={attributesRight}>{this.props.player.heading}</div>
-                                    <div className="pure-u-2-3" style={attributesLeft}>Reflex</div>
-                                </div>
-                                <div className="pure-g">
-                                    <div className="pure-u-1-3"
-                                         style={attributesRight}>{this.props.player.interceptions}</div>
-                                    <div className="pure-u-2-3" style={attributesLeft}>Speed</div>
-                                </div>
-                                <div className="pure-g">
-                                    <div className="pure-u-1-3"
-                                         style={attributesRight}>{this.props.player.longpassing}</div>
                                     <div className="pure-u-2-3" style={attributesLeft}>Positioning</div>
+                                    <div className="pure-u-1-3"
+                                         style={attributesRight}>{this.props.player.positioning}</div>
+                                </div>
+                                <div className="pure-g">
+                                    <div className="pure-u-2-3" style={attributesLeft}>Reflex</div>
+                                    <div className="pure-u-1-3"
+                                         style={attributesRight}>{this.props.player.reflexes}</div>
+                                </div>
+                                <div className="pure-g">
+                                    <div className="pure-u-2-3" style={attributesLeft}>Speed</div>
+                                    <div className="pure-u-1-3"
+                                         style={attributesRight}>{this.props.player.speed}</div>
                                 </div>
                             </div>
                             :
                             <div>
                                 <div className="pure-g">
+                                    <div className="pure-u-2-3" style={attributesLeft}>Defending</div>
                                     <div className="pure-u-1-3"
-                                         style={attributesRight}>{this.props.player.crossing}</div>
-                                    <div className="pure-u-2-3" style={attributesLeft}>Pace</div>
+                                         style={attributesRight}>{this.props.player.defence}</div>
                                 </div>
                                 <div className="pure-g">
+                                    <div className="pure-u-2-3" style={attributesLeft}>Dribbling</div>
                                     <div className="pure-u-1-3"
                                          style={attributesRight}>{this.props.player.dribbling}</div>
+                                </div>
+                                <div className="pure-g">
                                     <div className="pure-u-2-3" style={attributesLeft}>Passing</div>
+                                    <div className="pure-u-1-3"
+                                         style={attributesRight}>{this.props.player.passing}</div>
                                 </div>
                                 <div className="pure-g">
-                                    <div className="pure-u-1-3"
-                                         style={attributesRight}>{this.props.player.finishing}</div>
-                                    <div className="pure-u-2-3" style={attributesLeft}>Shooting</div>
-                                </div>
-                                <div className="pure-g">
-                                    <div className="pure-u-1-3"
-                                         style={attributesRight}>{this.props.player.heading}</div>
-                                    <div className="pure-u-2-3" style={attributesLeft}>Dribbling</div>
-                                </div>
-                                <div className="pure-g">
-                                    <div className="pure-u-1-3"
-                                         style={attributesRight}>{this.props.player.interceptions}</div>
-                                    <div className="pure-u-2-3" style={attributesLeft}>Defending</div>
-                                </div>
-                                <div className="pure-g">
-                                    <div className="pure-u-1-3"
-                                         style={attributesRight}>{this.props.player.longpassing}</div>
                                     <div className="pure-u-2-3" style={attributesLeft}>Physical</div>
+                                    <div className="pure-u-1-3"
+                                         style={attributesRight}>{this.props.player.physical}</div>
+                                </div>
+                                <div className="pure-g">
+                                    <div className="pure-u-2-3" style={attributesLeft}>Shooting</div>
+                                    <div className="pure-u-1-3"
+                                         style={attributesRight}>{this.props.player.shooting}</div>
+                                </div>
+                                <div className="pure-g">
+                                    <div className="pure-u-2-3" style={attributesLeft}>Sweat</div>
+                                    <div className="pure-u-1-3"
+                                         style={attributesRight}>{this.props.player.pace}</div>
                                 </div>
                             </div>
                         }
                     </div>
-                    <a href={this.props.player.wikipediaUrl} target="_blank">
-                        <img alt="wikipedia" className="wikipedia"
-                             src="http://localhost:63342/foobar-football-react/assets/images/wikipedia.png"/>
-                    </a>
                 </div>
             );
         }

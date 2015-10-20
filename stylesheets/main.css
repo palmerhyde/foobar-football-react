@@ -172,15 +172,16 @@ body {
 .card .nation {
     width: 44px;
     position: absolute;
-    top: 40px;
     left: 165px;
-    opacity: 0.2
+    top: 37px;
+    opacity: 0.2;
 }
 
 .wikipedia {
-    width: 25px;
-    margin-top: 10px;
-    margin-left: 0px;
+    position: absolute;
+    width: 20px;
+    top: 6px;
+    left: 207px;
 }
 
 .googlemaps {
@@ -286,7 +287,7 @@ body {
     top: 0;
 }
 
-.card .title .score {
+.card .score {
     background-color: blue;
     right: 7px;
     top: 7px;
@@ -406,5 +407,39 @@ body {
 
 .card .attrs .value {
     float: right;
+}
+
+.liam {
+    background: radial-gradient( 5px -9px, circle, white 8%, red 26px );
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+    box-shadow: 1px 1px 1px black;
+    color: white;
+    font: bold 15px/13px Helvetica, Verdana, Tahoma;
+    height: 17px;
+    min-width: 14px;
+    padding: 4px 5px 0 5px;
+    text-align: center;
+    top: 2px;
+    right: 2px;
+    position: absolute;
+}
+.liam2 {
+    background: radial-gradient( 5px -9px, circle, white 8%, red 26px );
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+    box-shadow: 1px 1px 1px black;
+    color: white;
+    font: bold 15px/13px Helvetica, Verdana, Tahoma;
+    height: 17px;
+    min-width: 14px;
+    padding: 4px 5px 0 5px;
+    text-align: center;
+    bottom: 2px;
+    left: 2px;
+    position: absolute;
+    transform: rotate(180deg);
 }
 

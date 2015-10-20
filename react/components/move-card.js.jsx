@@ -8,48 +8,57 @@ module.exports = React.createClass({
         }
 
         var style = {
-            backgroundColor: "purple",
-            borderColor: "gold"
+            textAlign: "right",
+            fontFamily: "PremierLeague"
         };
 
         var style2 = {
-            backgroundColor: "white",
-            borderColor: "gold"
+            textAlign: "left",
+            fontFamily: "PremierLeague"
+        };
+        var synergy = {
+            color: "white",
+            marginTop: "65px"
         };
 
         var attributes;
 
         switch (this.props.move.type) {
             case "Single":
+            case "Single - Keeper":
                 attributes = <div className="battle">
-                    {this.props.move.attribute1a}<br/>
-                    VS<br/>
-                    {this.props.move.attribute1b}
-                </div>
-                break;
-            case "Double":
-                attributes = <div className="battle">
-                    {this.props.move.attribute1a}<br/>
-                    {this.props.move.attribute2a}<br/>
-                    VS<br/>
-                    {this.props.move.attribute1b}<br/>
-                    {this.props.move.attribute2b}
+                    <div>
+                        <div className="pure-g">
+                            <div className="pure-u-2-5" style={style}>{this.props.move.attribute1a}</div>
+                            <div className="pure-u-1-5">VS</div>
+                            <div className="pure-u-2-5" style={style2}>{this.props.move.attribute1b}</div>
+                        </div>
+                    </div>
                 </div>
                 break;
             case "Team":
+            case "Team - Keeper":
                 attributes = <div className="battle">
-                    {this.props.move.attribute1a}<br/>
-                    {this.props.move.attribute2a}<br/>
-                    VS<br/>
-                    {this.props.move.attribute1b}<br/>
-                    {this.props.move.attribute2b}
+                    <div>
+                        <div className="pure-g">
+                            <div className="pure-u-2-5" style={style}>{this.props.move.attribute1a}</div>
+                            <div className="pure-u-1-5">VS</div>
+                            <div className="pure-u-2-5" style={style2}>{this.props.move.attribute1b}</div>
+                        </div>
+                        <div className="pure-g">
+                            <div className="pure-u-2-5" style={style}>{this.props.move.attribute2a}</div>
+                            <div className="pure-u-1-5">VS</div>
+                            <div className="pure-u-2-5" style={style2}>{this.props.move.attribute2b}</div>
+                        </div>
+                        <div style={synergy}>{this.props.move.synergy}</div>
+                    </div>
                 </div>
                 break;
         }
 
         return (
             <div className="card">
-                <div class="clear"></div>
+                <div className="clear"></div>
                 <div className="title">
                     {this.props.move.name}
                 </div>

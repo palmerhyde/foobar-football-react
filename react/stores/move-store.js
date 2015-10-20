@@ -19,6 +19,20 @@ function getMoves() {
         _moves.push(result);
         MoveStore.emitChange();
     });
+
+    matchViewRef.on('child_removed', function (snapshot) {
+        console.log('remove');
+        var result = snapshot.val();
+        if (!_moves) {
+            _moves = [];
+        }
+
+        _moves = _moves.filter(function(element){
+            return element.minute !== result.minute;
+        });
+
+        MoveStore.emitChange();
+    });
 }
 
 var MoveStore = Flux.createStore({

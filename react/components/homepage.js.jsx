@@ -12,6 +12,7 @@ module.exports = React.createClass({
                         <Link to="App">Home</Link> |
                         <Link to="Match" params={{ match_id: "666" }}>Match</Link> |
                         <Link to="Players">Players</Link> |
+                        <Link to="Poker">Poker Players</Link> |
                         <Link to="Moves">Moves</Link> |
                         <Link to="Stadiums">Stadiums</Link> |
                         <Link to="Chants">Chants</Link>

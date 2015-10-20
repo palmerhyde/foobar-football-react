@@ -22,5 +22,10 @@ module.exports = Flux.createActions({
         return {
             actionType: Constants.RECEIVE_CHANTS
         }
+    },
+    receivePokerPlayers: function() {
+        return {
+            actionType: Constants.RECEIVE_POKER_PLAYERS
+        }
     }
 });

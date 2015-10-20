@@ -1,29 +1,29 @@
 var React = require('react');
-var Move = require('./move-card.js.jsx');
-var MoveStore = require('./../stores/move-store');
+var PokerPlayer = require('./poker-player-card.js.jsx');
+var Store = require('./../stores/poker-player-store');
 
-function getMoves() {
-    var moves = MoveStore.Get();
+function getData() {
+    var data = Store.Get();
 
     return {
-        moves: moves
+        data: data
     };
 }
 
 module.exports = React.createClass({
-    displayName: 'move list component',
-    mixins: [MoveStore.mixin],
+    displayName: 'poker player list component',
+    mixins: [Store.mixin],
     getInitialState: function() {
-        return getMoves();
+        return getData();
     },
     componentDidMount: function (){
-        this.setState(getMoves());
+        this.setState(getData());
     },
     storeDidChange: function () {
-        this.setState(getMoves());
+        this.setState(getData());
     },
     render: function () {
-        if (!this.state.moves) {
+        if (!this.state.data) {
             return false;
         }
 
@@ -34,10 +34,13 @@ module.exports = React.createClass({
 
         return (
             <div className="pure-u-8-8">
-                {this.state.moves.map(function (move, index) {
+                {this.state.data.map(function (data, index) {
                     return (
-                        <div style={style}>
-                            <Move move={move}  />
+                        <div key={index} style={style}>
+                            <PokerPlayer player={data} suit="hearts" />
+                            <PokerPlayer player={data} suit="clubs" />
+                            <PokerPlayer player={data} suit="diamonds" />
+                            <PokerPlayer player={data} suit="spades" />
                         </div>
                     )
                 }, this)

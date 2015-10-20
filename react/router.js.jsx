@@ -17,6 +17,7 @@ var RouteActions = require('./actions/route-actions');
 var routes = (
     <Route name="App" path= "/" handler={App}>
         <Route name="Match" path="/matches/:match_id" handler={Match} />
+        <Route name="Poker" path="/poker/" handler={Moves} />
         <Route name="Players" path="/players" handler={Players} />
         <Route name="Moves" path="/moves" handler={Moves} />
         <Route name="Stadiums" path="/stadiums" handler={Stadiums} />
@@ -32,6 +33,7 @@ Router.run(routes, function (Handler, state) {
     // Hardcode user for now
     //RouteActions.receiveUserId(269880);
     RouteActions.receiveMoves();
+    RouteActions.receivePokerPlayers();
     RouteActions.receiveStadiums();
     RouteActions.receiveChants();
     RouteActions.receiveMatchId(666);

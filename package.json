@@ -11,6 +11,7 @@
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
     "grunt-react": "*",
+    "js-combinatorics": "^0.5.0",
     "mcfly": "*",
     "react": "*",
     "react-router": "*",

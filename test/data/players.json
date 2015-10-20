@@ -1,66 +1,63 @@
 [
   {
     "name" : "George Best",
-    "move" : "",
-    "imageUrl" : "",
+    "imageUrl" : "http://futhead.cursecdn.com/static/img/16/players/226764.png",
     "description" : "",
     "rank" : "A",
     "up" : {
       "type" : "Attack",
       "combo" : "Shot",
-      "pace" : 1,
+      "pace" : 10,
       "damage" : 12,
       "blockDamage" : 3,
       "buildup" : 2,
       "cost" : 1,
-      "repeatCost" : 0,
-      "repeatDamage" : 0
+      "repeatDamage" : 0,
+      "move" : "Shot at goal"
     },
     "down" : {
       "type" : "Attack",
       "combo" : "Shot",
-      "pace" : 4,
+      "pace" : 6,
       "damage" : 45,
       "blockDamage" : 1,
       "buildup" : 3,
       "cost" : 3,
-      "repeatCost" : 0,
-      "repeatDamage" : 0
+      "repeatDamage" : 0,
+      "move" : "Super goal"
     }
   },
   {
-    "name" : "Messi",
-    "move" : "",
-    "imageUrl" : "",
+    "name" : "Lionel Messi",
+    "imageUrl" : "http://futhead.cursecdn.com/static/img/16/players/158023.png",
     "description" : "",
     "rank" : "K",
     "up" : {
       "type" : "Attack",
       "combo" : "Build-up",
-      "pace" : 2,
+      "pace" : 8,
       "damage" : 7,
       "blockDamage" : 1,
       "buildup" : 2,
       "cost" : 1,
-      "repeatCost" : 2,
-      "repeatDamage" : 7
+      "repeatDamage" : 7,
+      "move" : "move name"
     },
     "down" : {
       "type" : "Attack",
       "combo" : "Build-up",
-      "pace" : 2,
+      "pace" : 8,
       "damage" : 7,
       "blockDamage" : 1,
       "buildup" : 2,
       "cost" : 1,
-      "repeatCost" : 1,
-      "repeatDamage" : 7
+      "repeatDamage" : 7,
+      "move" : "Move name"
     }
   },
   {
-    "name" : "Ronaldo",
-    "move" : "",
-    "imageUrl" : "",
+    "name" : "Cristiano Ronaldo",
+    "imageUrl" : "http://futhead.cursecdn.com/static/img/16/players_alt/p67129665.png",
     "description" : "",
     "rank" : "Q",
     "up" : {
@@ -71,8 +68,8 @@
       "blockDamage" : 2,
       "buildup" : 3,
       "cost" : 1,
-      "repeatCost" : 0,
-      "repeatDamage" : 0
+      "repeatDamage" : 0,
+      "move" : "Move name"
     },
     "down" : {
       "type" : "Attack",
@@ -82,14 +79,13 @@
       "blockDamage" : 2,
       "buildup" : 3,
       "cost" : 1,
-      "repeatCost" : 0,
-      "repeatDamage" : 0
+      "repeatDamage" : 0,
+      "move" : "Move name"
     }
   },
   {
-    "name" : "Hazard",
-    "move" : "",
-    "imageUrl" : "",
+    "name" : "Eden Hazard",
+    "imageUrl" : "http://futhead.cursecdn.com/static/img/16/players/183277.png",
     "description" : "",
     "rank" : "J",
     "up" : {
@@ -100,8 +96,8 @@
       "blockDamage" : 3,
       "buildup" : 1,
       "cost" : 1,
-      "repeatCost" : 0,
-      "repeatDamage" : 0
+      "repeatDamage" : 0,
+      "move" : "Move name"
     },
     "down" : {
       "type" : "Attack",
@@ -111,31 +107,32 @@
       "blockDamage" : 3,
       "buildup" : 1,
       "cost" : 1,
-      "repeatCost" : 0,
-      "repeatDamage" : 0
+      "repeatDamage" : 0,
+      "move" : "Move name"
     }
   },
   {
-    "name": "Defender",
-    "move": "",
-    "imageUrl": "",
+    "name": "Philipp Lahm",
+    "imageUrl": "http://futhead.cursecdn.com/static/img/16/players/121939.png",
     "description": "",
     "rank": "10",
     "up": {
-      "type": "Defend"
+      "type": "Defend",
+      "move" : "Move name"
     },
     "down": {
       "type": "Possession",
       "combo": "Start",
       "pace": 4,
       "damage": 7,
-      "cost" : 2
+      "cost" : 1,
+      "buildup" : 2,
+      "move" : "Move name"
     }
   },
   {
-    "name": "Defender",
-    "move": "",
-    "imageUrl": "",
+    "name": "Vincent Company",
+    "imageUrl": "http://futhead.cursecdn.com/static/img/16/players/139720.png",
     "description": "",
     "rank": "9",
     "up": {
@@ -143,16 +140,17 @@
       "combo": "Start",
       "pace": 4,
       "damage": 7,
-      "cost" : 2
+      "cost" : 1,
+      "buildup" : 2,
+      "move" : "Move name"
     },
     "down": {
       "type": "Defend"
     }
   },
   {
-    "name": "Defender",
-    "move": "",
-    "imageUrl": "",
+    "name": "Thiago Silva",
+    "imageUrl": "http://futhead.cursecdn.com/static/img/16/players/164240.png",
     "description": "",
     "rank": "8",
     "up": {
@@ -160,16 +158,17 @@
       "combo": "Start",
       "pace": 4,
       "damage": 7,
-      "cost" : 2
+      "cost" : 1,
+      "buildup" : 2,
+      "move" : "Move name"
     },
     "down": {
       "type": "Defend"
     }
   },
   {
-    "name": "Defender",
-    "move": "",
-    "imageUrl": "",
+    "name": "Serio Ramos",
+    "imageUrl": "http://futhead.cursecdn.com/static/img/16/players/155862.png",
     "description": "",
     "rank": "7",
     "up": {
@@ -177,7 +176,9 @@
       "combo": "Start",
       "pace": 4,
       "damage": 7,
-      "cost" : 2
+      "cost" : 1,
+      "buildup" : 2,
+      "move" : "Move name"
     },
     "down": {
       "type": "Defend"
@@ -185,8 +186,7 @@
   },
   {
     "name": "John Terry",
-    "move": "",
-    "imageUrl": "",
+    "imageUrl": "http://futhead.cursecdn.com/static/img/16/players/13732.png",
     "description": "",
     "rank": "6",
     "up": {
@@ -194,33 +194,35 @@
       "combo": "Run",
       "pace": 4,
       "damage": 6,
-      "cost" : 1
+      "cost" : 1,
+      "buildup" : 2,
+      "move" : "Set piece header"
     },
     "down": {
       "type": "Defend"
     }
   },
   {
-    "name": "Attack defender",
-    "move": "",
-    "imageUrl": "",
+    "name": "Laurent Koscielny",
+    "imageUrl": "http://futhead.cursecdn.com/static/img/16/players/165229.png",
     "description": "",
     "rank": "5",
     "up": {
       "type": "Attack",
       "combo": "Run",
       "pace": 4,
-      "damage": 6,
-      "cost" : 1
+      "damage": 5,
+      "cost" : 1,
+      "buildup" : 2,
+      "move" : "Set piece header"
     },
     "down": {
       "type": "Defend"
     }
   },
   {
-    "name": "Attack counter",
-    "move": "",
-    "imageUrl": "",
+    "name": "Mesut Özil",
+    "imageUrl": "http://futhead.cursecdn.com/static/img/16/players_alt/p50508283.png",
     "description": "",
     "rank": "4",
     "up": {
@@ -228,16 +230,17 @@
       "combo": "Run",
       "pace": 4,
       "damage": 4,
-      "cost" : 1
+      "cost" : 1,
+      "buildup" : 2,
+      "move" : "1 - 2"
     },
     "down": {
       "type": "Counter"
     }
   },
   {
-    "name": "Attack counter",
-    "move": "",
-    "imageUrl": "",
+    "name": "Yaya Touré",
+    "imageUrl": "http://futhead.cursecdn.com/static/img/16/players/20289.png",
     "description": "",
     "rank": "3",
     "up": {
@@ -245,16 +248,17 @@
       "combo": "Run",
       "pace": 4,
       "damage": 3,
-      "cost" : 1
+      "cost" : 1,
+      "buildup" : 2,
+      "move" : "Long shot"
     },
     "down": {
       "type": "Counter"
     }
   },
   {
-    "name": "Attack counter",
-    "move": "",
-    "imageUrl": "",
+    "name": "Christian Eriksen",
+    "imageUrl": "http://futhead.cursecdn.com/static/img/16/players/190460.png",
     "description": "",
     "rank": "2",
     "up": {
@@ -262,10 +266,327 @@
       "combo": "Run",
       "pace": 4,
       "damage": 2,
-      "cost" : 1
+      "cost" : 1,
+      "buildup" : 2,
+      "move" : "Long shot"
     },
     "down": {
       "type": "Counter"
+    }
+  },
+  {
+    "name" : "Diego Maradona",
+    "imageUrl" : "http://i50.photobucket.com/albums/f339/krobertsen/Faces/maradona.png",
+    "description" : "",
+    "rank" : "A",
+    "up" : {
+      "type" : "Attack",
+      "combo" : "Solo",
+      "pace" : 2,
+      "damage" : 20,
+      "blockDamage" : 3,
+      "buildup" : 0,
+      "cost" : 2,
+      "repeatDamage" : 0,
+      "move" : "Hand of god"
+    },
+    "down" : {
+      "type" : "Counter",
+      "combo" : "Solo",
+      "pace" : 10,
+      "damage" : 50,
+      "blockDamage" : 0,
+      "buildup" : 0,
+      "cost" : 4,
+      "repeatDamage" : 0,
+      "move" : "Goal of the century"
+    }
+  },
+  {
+    "name": "Luis Suárez",
+    "imageUrl": "http://futhead.cursecdn.com/static/img/16/players/176580.png",
+    "description": "",
+    "rank": "k",
+    "up": {
+      "type": "Possession",
+      "combo": "Solo",
+      "pace": 6,
+      "damage": 15,
+      "blockDamage": 0,
+      "buildup": 0,
+      "cost": 1,
+      "repeatDamage": 0,
+      "move": "Move name"
+    },
+    "down": {
+      "type": "Possession",
+      "combo": "Solo",
+      "pace": 6,
+      "damage": 15,
+      "blockDamage": 0,
+      "buildup": 0,
+      "cost": 1,
+      "repeatDamage": 0,
+      "move": "Move name"
+    }
+  },
+  {
+    "name" : "Zlatan Ibrahimović",
+    "imageUrl" : "http://futhead.cursecdn.com/static/img/16/players_alt/p50372884.png",
+    "description" : "",
+    "rank" : "Q",
+    "up" : {
+      "type" : "Attack",
+      "combo" : "Shot",
+      "pace" : 4,
+      "damage" : 9,
+      "blockDamage" : 1,
+      "buildup" : 2,
+      "cost" : 1,
+      "repeatDamage" : 5,
+      "move" : "Move name"
+    },
+    "down" : {
+      "type" : "Possession",
+      "combo" : "Shot",
+      "pace" : 6,
+      "damage" : 10,
+      "blockDamage" : 0,
+      "buildup" : 2,
+      "cost" : 1,
+      "repeatDamage" : 0,
+      "move" : "Move name"
+    }
+  },
+  {
+    "name" : "Arjen Robben",
+    "imageUrl" : "http://futhead.cursecdn.com/static/img/16/players/9014.png",
+    "description" : "",
+    "rank" : "J",
+    "up" : {
+      "type" : "Attack",
+      "combo" : "Build up",
+      "pace" : 8,
+      "damage" : 4,
+      "blockDamage" : 2,
+      "buildup" : 1,
+      "cost" : 1,
+      "repeatDamage" : 0,
+      "move" : "Move name"
+    },
+    "down" : {
+      "type" : "Attack",
+      "combo" : "Build up",
+      "pace" : 8,
+      "damage" : 4,
+      "blockDamage" : 2,
+      "buildup" : 1,
+      "cost" : 1,
+      "repeatDamage" : 0,
+      "move" : "Move name"
+    }
+  },
+  {
+    "name" : "David Silva",
+    "imageUrl" : "http://futhead.cursecdn.com/static/img/16/players/168542.png",
+    "description" : "",
+    "rank" : "10",
+    "up" : {
+      "type" : "Attack",
+      "combo" : "Run",
+      "pace" : 2,
+      "damage" : 10,
+      "blockDamage" : 0,
+      "buildup" : 1,
+      "cost" : 1,
+      "repeatDamage" : 0,
+      "move" : "Move name"
+    },
+    "down" : {
+      "type" : "Possession",
+      "combo" : "Solo",
+      "pace" : 10,
+      "damage" : 10,
+      "blockDamage" : 0,
+      "buildup" : 0,
+      "cost" : 1,
+      "repeatDamage" : 0,
+      "move" : "Move name"
+    }
+  },
+  {
+    "name" : "Nemanja Matić",
+    "imageUrl" : "http://futhead.cursecdn.com/static/img/16/players/191202.png",
+    "description" : "",
+    "rank" : "9",
+    "up" : {
+      "type" : "Possession",
+      "combo" : "Solo",
+      "pace" : 10,
+      "damage" : 10,
+      "blockDamage" : 0,
+      "buildup" : 0,
+      "cost" : 1,
+      "repeatDamage" : 0,
+      "move" : "Move name"
+    },
+    "down" : {
+      "type" : "Defend",
+      "move" : "Move name"
+    }
+  },
+  {
+    "name" : "Sergio Busquets",
+    "imageUrl" : "http://futhead.cursecdn.com/static/img/16/players/189511.png",
+    "description" : "",
+    "rank" : "8",
+    "up" : {
+      "type" : "Attack",
+      "combo" : "Run",
+      "pace" : 2,
+      "damage" : 8,
+      "blockDamage" : 0,
+      "buildup" : 1,
+      "cost" : 1,
+      "repeatDamage" : 0,
+      "move" : "Move name"
+    },
+    "down" : {
+      "type" : "Defend",
+      "move" : "Move name"
+    }
+  },
+  {
+    "name" : "Santi Cazorla",
+    "imageUrl" : "http://futhead.cursecdn.com/static/img/16/players/146562.png",
+    "description" : "",
+    "rank" : "7",
+    "up" : {
+      "type" : "Possession",
+      "combo" : "Solo",
+      "pace" : 10,
+      "damage" : 10,
+      "blockDamage" : 0,
+      "buildup" : 0,
+      "cost" : 1,
+      "repeatDamage" : 0,
+      "move" : "Move name"
+    },
+    "down" : {
+      "type" : "Attack",
+      "combo" : "Run",
+      "pace" : 2,
+      "damage" : 7,
+      "blockDamage" : 0,
+      "buildup" : 0,
+      "cost" : 1,
+      "repeatDamage" : 0,
+      "move" : "Move name"
+    }
+  },
+  {
+    "name" : "Leighton Baines",
+    "imageUrl" : "http://futhead.cursecdn.com/static/img/16/players/163631.png",
+    "description" : "",
+    "rank" : "6",
+    "up" : {
+      "type" : "Attack",
+      "combo" : "Run",
+      "pace" : 2,
+      "damage" : 6,
+      "blockDamage" : 0,
+      "buildup" : 1,
+      "cost" : 1,
+      "repeatDamage" : 0,
+      "move" : "Move name"
+    },
+    "down" : {
+      "type" : "Defend",
+      "move" : "Move name"
+    }
+  },
+  {
+    "name" : "Leighton Baines",
+    "imageUrl" : "http://futhead.cursecdn.com/static/img/16/players/163631.png",
+    "description" : "",
+    "rank" : "5",
+    "down" : {
+      "type" : "Attack",
+      "combo" : "Run",
+      "pace" : 2,
+      "damage" : 5,
+      "blockDamage" : 0,
+      "buildup" : 1,
+      "cost" : 1,
+      "repeatDamage" : 0,
+      "move" : "Move name"
+    },
+    "up" : {
+      "type" : "Defend",
+      "move" : "Move name"
+    }
+  },
+  {
+    "name" : "Branislav Ivanovic",
+    "imageUrl" : "http://futhead.cursecdn.com/static/img/16/players/178372.png",
+    "description" : "",
+    "rank" : "4",
+    "down" : {
+      "type" : "Attack",
+      "combo" : "Run",
+      "pace" : 2,
+      "damage" : 4,
+      "blockDamage" : 0,
+      "buildup" : 1,
+      "cost" : 1,
+      "repeatDamage" : 0,
+      "move" : "Move name"
+    },
+    "up" : {
+      "type" : "Defend",
+      "move" : "Move name"
+    }
+  },
+  {
+    "name" : "Bastian Schweinsteiger",
+    "imageUrl" : "http://futhead.cursecdn.com/static/img/16/players/121944.png",
+    "description" : "",
+    "rank" : "3",
+    "down" : {
+      "type" : "Possession",
+      "combo" : "Solo",
+      "pace" : 10,
+      "damage" : 10,
+      "blockDamage" : 0,
+      "buildup" : 0,
+      "cost" : 1,
+      "repeatDamage" : 0,
+      "move" : "Move name"
+    },
+    "up" : {
+      "type" : "Defend",
+      "move" : "Move name"
+    }
+  },
+  {
+    "name" : "Toni Kroos",
+    "imageUrl" : "http://futhead.cursecdn.com/static/img/16/players/182521.png",
+    "description" : "",
+    "rank" : "2",
+    "down" : {
+      "type" : "Possession",
+      "combo" : "Solo",
+      "pace" : 10,
+      "damage" : 10,
+      "blockDamage" : 0,
+      "buildup" : 0,
+      "cost" : 1,
+      "repeatDamage" : 0,
+      "move" : "Move name"
+    },
+    "up" : {
+      "type" : "Defend",
+      "move" : "Move name"
     }
   }
 ]
