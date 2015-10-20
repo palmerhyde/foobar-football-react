@@ -588,5 +588,33 @@
       "type" : "Defend",
       "move" : "Move name"
     }
+  },
+  {
+    "name" : "Manuel Neuer",
+    "imageUrl" : "http://futhead.cursecdn.com/static/img/16/players/167495.png",
+    "description" : "",
+    "rank" : "JKR",
+    "down" : {
+      "type" : "Goalkeeper",
+      "move" : "Move name"
+    },
+    "up" : {
+      "type" : "Goalkeeper",
+      "move" : "Move name"
+    }
+  },
+  {
+    "name" : "De Gea",
+    "imageUrl" : "http://futhead.cursecdn.com/static/img/16/players/193080.png",
+    "description" : "",
+    "rank" : "JKR",
+    "down" : {
+      "type" : "Goalkeeper",
+      "move" : "Move name"
+    },
+    "up" : {
+      "type" : "Goalkeeper",
+      "move" : "Move name"
+    }
   }
 ]

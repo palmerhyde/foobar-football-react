@@ -1172,6 +1172,14 @@ module.exports = React.createClass({
             marginRight: "auto"
         };
 
+        var photoJokerStyle = {
+            width: "150px",
+            display: "block",
+            marginLeft: "auto",
+            marginRight: "auto",
+            marginTop: "25px;"
+        };
+
         var cardStyle = {
             backgroundColor: "white"
         };
@@ -1314,102 +1322,117 @@ module.exports = React.createClass({
 
         return (
             React.createElement("div", {className: "card", style: cardStyle}, 
-                React.createElement("div", {className: "clear"}), 
-                React.createElement("div", {style: valueUpStyle(this.props.suit)}, this.props.player.rank), 
-                React.createElement("div", {style: suitUpStyle(this.props.suit), dangerouslySetInnerHTML: this.getSuitSymbol(this.props.suit)}), 
+                 this.props.player.rank != "JOKER" ?
+                React.createElement("div", null, 
+                    React.createElement("div", {className: "clear"}), 
+                    React.createElement("div", {style: valueUpStyle(this.props.suit)}, this.props.player.rank), 
+                    React.createElement("div", {style: suitUpStyle(this.props.suit), 
+                         dangerouslySetInnerHTML: this.getSuitSymbol(this.props.suit)}), 
 
-                React.createElement("div", {style: typeUpStyle}, this.props.player.up.type, 
-                     this.props.player.up.combo ?
+                    React.createElement("div", {style: typeUpStyle}, this.props.player.up.type, 
+                         this.props.player.up.combo ?
                         React.createElement("span", null, " - ", this.props.player.up.combo)
-                        :
-                        null
-                    
+                            :
+                            null
+                            
                     ), 
-                React.createElement("div", {style: moveUpStyle}, this.props.player.up.move
-                ), 
+                    React.createElement("div", {style: moveUpStyle}, this.props.player.up.move
+                    ), 
 
-                React.createElement("div", {style: upStats}, 
-                     this.props.player.up.damage > 0 ?
-                    React.createElement("div", {style: damageStat}, this.props.player.up.damage)
-                        :
-                        null, 
-                        
-                     this.props.player.up.repeatDamage > 0 ?
-                    React.createElement("div", {style: damageStat}, this.props.player.up.repeatDamage)
-                        :
-                        null, 
-                        
-                     this.props.player.up.blockDamage > 0 ?
-                    React.createElement("div", {style: blockDamageStat}, this.props.player.up.blockDamage)
-                        :
-                        null, 
-                        
-                     this.props.player.up.pace > 0 ?
-                    React.createElement("div", {style: paceStat}, this.props.player.up.pace)
-                        :
-                        null, 
-                        
-                     this.props.player.up.cost > 1 ?
-                    React.createElement("div", {style: costStat}, this.props.player.up.cost)
-                        :
-                        null, 
-                        
-                     this.props.player.up.buildup > 0 ?
-                    React.createElement("div", {style: buildupStat}, this.props.player.up.buildup)
-                        :
-                        null
-                        
-                ), 
+                    React.createElement("div", {style: upStats}, 
+                         this.props.player.up.damage > 0 ?
+                        React.createElement("div", {style: damageStat}, this.props.player.up.damage)
+                            :
+                            null, 
+                            
+                         this.props.player.up.repeatDamage > 0 ?
+                        React.createElement("div", {style: damageStat}, this.props.player.up.repeatDamage)
+                            :
+                            null, 
+                            
+                         this.props.player.up.blockDamage > 0 ?
+                        React.createElement("div", {style: blockDamageStat}, this.props.player.up.blockDamage)
+                            :
+                            null, 
+                            
+                         this.props.player.up.pace > 0 ?
+                        React.createElement("div", {style: paceStat}, this.props.player.up.pace)
+                            :
+                            null, 
+                            
+                         this.props.player.up.cost > 1 ?
+                        React.createElement("div", {style: costStat}, this.props.player.up.cost)
+                            :
+                            null, 
+                            
+                         this.props.player.up.buildup > 0 ?
+                        React.createElement("div", {style: buildupStat}, this.props.player.up.buildup)
+                            :
+                            null
+                            
+                    ), 
 
-                React.createElement("div", {style: photoStyle}, 
-                    React.createElement("img", {style: photoStyle, src: this.props.player.imageUrl}), 
-                    React.createElement("div", {style: nameStyle}, this.props.player.name)
-                ), 
+                    React.createElement("div", {style: photoStyle}, 
+                        React.createElement("img", {style: photoStyle, src: this.props.player.imageUrl}), 
+                        React.createElement("div", {style: nameStyle}, this.props.player.name)
+                    ), 
 
-                React.createElement("div", {style: downStats}, 
-                     this.props.player.down.damage > 0 ?
-                    React.createElement("div", {style: damageStat}, this.props.player.down.damage)
-                        :
-                        null, 
-                        
-                     this.props.player.down.repeatDamage > 0 ?
-                    React.createElement("div", {style: damageStat}, this.props.player.down.repeatDamage)
-                        :
-                        null, 
-                        
-                     this.props.player.down.blockDamage > 0 ?
-                    React.createElement("div", {style: blockDamageStat}, this.props.player.down.blockDamage)
-                        :
-                        null, 
-                        
-                     this.props.player.down.pace > 0 ?
-                    React.createElement("div", {style: paceStat}, this.props.player.down.pace)
-                        :
-                        null, 
-                        
-                     this.props.player.down.cost > 1 ?
-                    React.createElement("div", {style: costStat}, this.props.player.down.cost)
-                        :
-                        null, 
-                        
-                     this.props.player.down.buildup > 0 ?
-                    React.createElement("div", {style: buildupStat}, this.props.player.down.buildup)
-                        :
-                        null
-                        
-                ), 
+                    React.createElement("div", {style: downStats}, 
+                         this.props.player.down.damage > 0 ?
+                        React.createElement("div", {style: damageStat}, this.props.player.down.damage)
+                            :
+                            null, 
+                            
+                         this.props.player.down.repeatDamage > 0 ?
+                        React.createElement("div", {style: damageStat}, this.props.player.down.repeatDamage)
+                            :
+                            null, 
+                            
+                         this.props.player.down.blockDamage > 0 ?
+                        React.createElement("div", {style: blockDamageStat}, this.props.player.down.blockDamage)
+                            :
+                            null, 
+                            
+                         this.props.player.down.pace > 0 ?
+                        React.createElement("div", {style: paceStat}, this.props.player.down.pace)
+                            :
+                            null, 
+                            
+                         this.props.player.down.cost > 1 ?
+                        React.createElement("div", {style: costStat}, this.props.player.down.cost)
+                            :
+                            null, 
+                            
+                         this.props.player.down.buildup > 0 ?
+                        React.createElement("div", {style: buildupStat}, this.props.player.down.buildup)
+                            :
+                            null
+                            
+                    ), 
 
-                React.createElement("div", {style: moveDownStyle}, this.props.player.down.move
-                ), 
-                React.createElement("div", {style: typeDownStyle}, this.props.player.down.type, 
-                     this.props.player.down.combo ?
-                    React.createElement("span", null, " - ", this.props.player.down.combo)
-                        :
-                        null
-                        
-                ), 
-                React.createElement("div", {style: suitDownStyle(this.props.suit), dangerouslySetInnerHTML: this.getSuitSymbol(this.props.suit)}), 
-                React.createElement("div", {style: valueDownStyle(this.props.suit)}, this.props.player.rank)
+                    React.createElement("div", {style: moveDownStyle}, this.props.player.down.move
+                    ), 
+                    React.createElement("div", {style: typeDownStyle}, this.props.player.down.type, 
+                         this.props.player.down.combo ?
+                        React.createElement("span", null, " - ", this.props.player.down.combo)
+                            :
+                            null
+                            
+                    ), 
+                    React.createElement("div", {style: suitDownStyle(this.props.suit), 
+                         dangerouslySetInnerHTML: this.getSuitSymbol(this.props.suit)}), 
+                    React.createElement("div", {style: valueDownStyle(this.props.suit)}, this.props.player.rank)
+                ) :
+                React.createElement("div", null, 
+                    React.createElement("div", {className: "clear"}), 
+                    React.createElement("div", {style: valueUpStyle(this.props.suit)}, this.props.player.rank), 
+                    React.createElement("div", {style: photoJokerStyle}, 
+                        React.createElement("img", {style: photoJokerStyle, src: this.props.player.imageUrl}), 
+                        React.createElement("div", {style: nameStyle}, this.props.player.name)
+                    ), 
+                    React.createElement("div", {style: valueDownStyle(this.props.suit)}, this.props.player.rank)
+                )
+                 
             )
         );
     }

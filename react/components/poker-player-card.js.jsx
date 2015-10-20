@@ -73,6 +73,14 @@ module.exports = React.createClass({
             marginRight: "auto"
         };
 
+        var photoJokerStyle = {
+            width: "150px",
+            display: "block",
+            marginLeft: "auto",
+            marginRight: "auto",
+            marginTop: "25px;"
+        };
+
         var cardStyle = {
             backgroundColor: "white"
         };
@@ -215,102 +223,117 @@ module.exports = React.createClass({
 
         return (
             <div className="card" style={cardStyle}>
-                <div className="clear"></div>
-                <div style={valueUpStyle(this.props.suit)}>{this.props.player.rank}</div>
-                <div style={suitUpStyle(this.props.suit)} dangerouslySetInnerHTML={this.getSuitSymbol(this.props.suit)}></div>
+                { this.props.player.rank != "JOKER" ?
+                <div>
+                    <div className="clear"></div>
+                    <div style={valueUpStyle(this.props.suit)}>{this.props.player.rank}</div>
+                    <div style={suitUpStyle(this.props.suit)}
+                         dangerouslySetInnerHTML={this.getSuitSymbol(this.props.suit)}></div>
 
-                <div style={typeUpStyle}>{this.props.player.up.type}
-                    { this.props.player.up.combo ?
+                    <div style={typeUpStyle}>{this.props.player.up.type}
+                        { this.props.player.up.combo ?
                         <span> - {this.props.player.up.combo}</span>
-                        :
-                        null
-                    }
+                            :
+                            null
+                            }
                     </div>
-                <div style={moveUpStyle}>{this.props.player.up.move}
-                </div>
+                    <div style={moveUpStyle}>{this.props.player.up.move}
+                    </div>
 
-                <div style={upStats}>
-                    { this.props.player.up.damage > 0 ?
-                    <div style={damageStat}>{this.props.player.up.damage}</div>
-                        :
-                        null
-                        }
-                    { this.props.player.up.repeatDamage > 0 ?
-                    <div style={damageStat}>{this.props.player.up.repeatDamage}</div>
-                        :
-                        null
-                        }
-                    { this.props.player.up.blockDamage > 0 ?
-                    <div style={blockDamageStat}>{this.props.player.up.blockDamage}</div>
-                        :
-                        null
-                        }
-                    { this.props.player.up.pace > 0 ?
-                    <div style={paceStat}>{this.props.player.up.pace}</div>
-                        :
-                        null
-                        }
-                    { this.props.player.up.cost > 1 ?
-                    <div style={costStat}>{this.props.player.up.cost}</div>
-                        :
-                        null
-                        }
-                    { this.props.player.up.buildup > 0 ?
-                    <div style={buildupStat}>{this.props.player.up.buildup}</div>
-                        :
-                        null
-                        }
-                </div>
+                    <div style={upStats}>
+                        { this.props.player.up.damage > 0 ?
+                        <div style={damageStat}>{this.props.player.up.damage}</div>
+                            :
+                            null
+                            }
+                        { this.props.player.up.repeatDamage > 0 ?
+                        <div style={damageStat}>{this.props.player.up.repeatDamage}</div>
+                            :
+                            null
+                            }
+                        { this.props.player.up.blockDamage > 0 ?
+                        <div style={blockDamageStat}>{this.props.player.up.blockDamage}</div>
+                            :
+                            null
+                            }
+                        { this.props.player.up.pace > 0 ?
+                        <div style={paceStat}>{this.props.player.up.pace}</div>
+                            :
+                            null
+                            }
+                        { this.props.player.up.cost > 1 ?
+                        <div style={costStat}>{this.props.player.up.cost}</div>
+                            :
+                            null
+                            }
+                        { this.props.player.up.buildup > 0 ?
+                        <div style={buildupStat}>{this.props.player.up.buildup}</div>
+                            :
+                            null
+                            }
+                    </div>
 
-                <div style={photoStyle}>
-                    <img style={photoStyle} src={this.props.player.imageUrl} />
-                    <div style={nameStyle}>{this.props.player.name}</div>
-                </div>
+                    <div style={photoStyle}>
+                        <img style={photoStyle} src={this.props.player.imageUrl}/>
+                        <div style={nameStyle}>{this.props.player.name}</div>
+                    </div>
 
-                <div style={downStats}>
-                    { this.props.player.down.damage > 0 ?
-                    <div style={damageStat}>{this.props.player.down.damage}</div>
-                        :
-                        null
-                        }
-                    { this.props.player.down.repeatDamage > 0 ?
-                    <div style={damageStat}>{this.props.player.down.repeatDamage}</div>
-                        :
-                        null
-                        }
-                    { this.props.player.down.blockDamage > 0 ?
-                    <div style={blockDamageStat}>{this.props.player.down.blockDamage}</div>
-                        :
-                        null
-                        }
-                    { this.props.player.down.pace > 0 ?
-                    <div style={paceStat}>{this.props.player.down.pace}</div>
-                        :
-                        null
-                        }
-                    { this.props.player.down.cost > 1 ?
-                    <div style={costStat}>{this.props.player.down.cost}</div>
-                        :
-                        null
-                        }
-                    { this.props.player.down.buildup > 0 ?
-                    <div style={buildupStat}>{this.props.player.down.buildup}</div>
-                        :
-                        null
-                        }
-                </div>
+                    <div style={downStats}>
+                        { this.props.player.down.damage > 0 ?
+                        <div style={damageStat}>{this.props.player.down.damage}</div>
+                            :
+                            null
+                            }
+                        { this.props.player.down.repeatDamage > 0 ?
+                        <div style={damageStat}>{this.props.player.down.repeatDamage}</div>
+                            :
+                            null
+                            }
+                        { this.props.player.down.blockDamage > 0 ?
+                        <div style={blockDamageStat}>{this.props.player.down.blockDamage}</div>
+                            :
+                            null
+                            }
+                        { this.props.player.down.pace > 0 ?
+                        <div style={paceStat}>{this.props.player.down.pace}</div>
+                            :
+                            null
+                            }
+                        { this.props.player.down.cost > 1 ?
+                        <div style={costStat}>{this.props.player.down.cost}</div>
+                            :
+                            null
+                            }
+                        { this.props.player.down.buildup > 0 ?
+                        <div style={buildupStat}>{this.props.player.down.buildup}</div>
+                            :
+                            null
+                            }
+                    </div>
 
-                <div style={moveDownStyle}>{this.props.player.down.move}
+                    <div style={moveDownStyle}>{this.props.player.down.move}
+                    </div>
+                    <div style={typeDownStyle}>{this.props.player.down.type}
+                        { this.props.player.down.combo ?
+                        <span> - {this.props.player.down.combo}</span>
+                            :
+                            null
+                            }
+                    </div>
+                    <div style={suitDownStyle(this.props.suit)}
+                         dangerouslySetInnerHTML={this.getSuitSymbol(this.props.suit)}></div>
+                    <div style={valueDownStyle(this.props.suit)}>{this.props.player.rank}</div>
+                </div> :
+                <div>
+                    <div className="clear"></div>
+                    <div style={valueUpStyle(this.props.suit)}>{this.props.player.rank}</div>
+                    <div style={photoJokerStyle}>
+                        <img style={photoJokerStyle} src={this.props.player.imageUrl}/>
+                        <div style={nameStyle}>{this.props.player.name}</div>
+                    </div>
+                    <div style={valueDownStyle(this.props.suit)}>{this.props.player.rank}</div>
                 </div>
-                <div style={typeDownStyle}>{this.props.player.down.type}
-                    { this.props.player.down.combo ?
-                    <span> - {this.props.player.down.combo}</span>
-                        :
-                        null
-                        }
-                </div>
-                <div style={suitDownStyle(this.props.suit)} dangerouslySetInnerHTML={this.getSuitSymbol(this.props.suit)}></div>
-                <div style={valueDownStyle(this.props.suit)}>{this.props.player.rank}</div>
+                 }
             </div>
         );
     }
